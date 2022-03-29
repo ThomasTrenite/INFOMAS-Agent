@@ -1,0 +1,14 @@
+<utility_space> 
+<objective name="HolidayPref" index="0" description="" etype="objective" type="objective"> 
+<issue vtype="discrete" name="Location" index="1" etype="discrete" type="discrete"> 
+<item evaluation="null" index="1" value="A (10), B (10) , C(10)"> 
+</item> 
+</issue> 
+<weight index="1" value="0.0"> 
+</weight> 
+</objective> 
+<discount_factor value="1.0"> 
+</discount_factor> 
+<reservation value="0.0"> 
+</reservation> 
+</utility_space> 

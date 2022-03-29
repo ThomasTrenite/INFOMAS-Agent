@@ -1,0 +1,7 @@
+<?xml version="1.0" ?><Session>
+<NegotiationOutcome currentTime="Sun Feb 27 00:15:29 CAT 2022" timeOfAgreement="0.9016393442622951" lastAction="(Accept  bid:Bid[Food: Catering, Drinks: Non-Alcoholic, Location: Party Tent, Invitations: Custom, Printed, Music: MP3, Cleanup: Special Equiment])" domain="etc/templates/partydomain/party_domain.xml" bids="108" runtime="0.1006786" finalOutcome="Bid[Food: Catering, Drinks: Non-Alcoholic, Location: Party Tent, Invitations: Custom, Printed, Music: MP3, Cleanup: Special Equiment]" startingAgent="RandomBidderExample@0" deadline="60rounds">
+<resultsOfAgent agent="RandomBidderExample@0" agentDesc="Places random bids &gt;= 0.3" utilspace="etc/templates/partydomain/party1_utility.xml" agentClass="bilateralexamples.RandomBidderExample" userUtility="0.4696312924963535" finalUtility="0.4696312924963535" discountedUtility="0.4696312924963535" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="RandomBidderExample@1" agentDesc="Places random bids &gt;= 0.3" utilspace="etc/templates/partydomain/party2_utility.xml" agentClass="bilateralexamples.RandomBidderExample" userUtility="0.5318544174995304" finalUtility="0.5318544174995304" discountedUtility="0.5318544174995304" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+</NegotiationOutcome></Session>

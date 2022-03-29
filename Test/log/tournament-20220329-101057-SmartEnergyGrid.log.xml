@@ -1,0 +1,217 @@
+<?xml version="1.0" ?><Tournament>
+<NegotiationOutcome exception="failed to construct agent : Execution failed of init&lt;CadacDC1@107,Participant[Party107,PartyRepositoryItem[CadacDC1,C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class,ANAC2017, is mediator=false],etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml]&gt;:java.lang.NullPointerException: null" currentTime="Tue Mar 29 10:10:57 CAT 2022" lastAction="null" bids="0" runtime="0.0" deadline="60rounds">
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="failed to construct agent : Execution failed of init&lt;CadacDC1@111,Participant[Party111,PartyRepositoryItem[CadacDC1,C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class,ANAC2017, is mediator=false],etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml]&gt;:java.lang.NullPointerException: null" currentTime="Tue Mar 29 10:10:57 CAT 2022" lastAction="null" bids="0" runtime="0.0" deadline="60rounds">
+<resultsOfAgent agent="BoaPartyExample" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\bilateralexamples\BoaPartyExample.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="failed to construct agent : Execution failed of init&lt;CadacDC1@114,Participant[Party114,PartyRepositoryItem[CadacDC1,C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class,ANAC2017, is mediator=false],etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml]&gt;:java.lang.NullPointerException: null" currentTime="Tue Mar 29 10:10:57 CAT 2022" lastAction="null" bids="0" runtime="0.0" deadline="60rounds">
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="failed to construct agent : Execution failed of init&lt;CadacDC1@116,Participant[Party116,PartyRepositoryItem[CadacDC1,C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class,ANAC2017, is mediator=false],etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml]&gt;:java.lang.NullPointerException: null" currentTime="Tue Mar 29 10:10:57 CAT 2022" lastAction="null" bids="0" runtime="0.0" deadline="60rounds">
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="BoaPartyExample" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\bilateralexamples\BoaPartyExample.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="failed to construct agent : Execution failed of init&lt;CadacDC1@121,Participant[Party121,PartyRepositoryItem[CadacDC1,C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class,ANAC2017, is mediator=false],etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml]&gt;:java.lang.NullPointerException: null" currentTime="Tue Mar 29 10:10:57 CAT 2022" lastAction="null" bids="0" runtime="0.0" deadline="60rounds">
+<resultsOfAgent agent="BoaPartyExample" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\bilateralexamples\BoaPartyExample.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="BoaPartyExample" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\bilateralexamples\BoaPartyExample.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="failed to construct agent : Execution failed of init&lt;CadacDC1@124,Participant[Party124,PartyRepositoryItem[CadacDC1,C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class,ANAC2017, is mediator=false],etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml]&gt;:java.lang.NullPointerException: null" currentTime="Tue Mar 29 10:10:57 CAT 2022" lastAction="null" bids="0" runtime="0.0" deadline="60rounds">
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="BoaPartyExample" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\bilateralexamples\BoaPartyExample.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="failed to construct agent : Execution failed of init&lt;CadacDC1@125,Participant[Party125,PartyRepositoryItem[CadacDC1,C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class,ANAC2017, is mediator=false],etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml]&gt;:java.lang.NullPointerException: null" currentTime="Tue Mar 29 10:10:57 CAT 2022" lastAction="null" bids="0" runtime="0.0" deadline="60rounds">
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="failed to construct agent : Execution failed of init&lt;CadacDC1@130,Participant[Party130,PartyRepositoryItem[CadacDC1,C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class,ANAC2017, is mediator=false],etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml]&gt;:java.lang.NullPointerException: null" currentTime="Tue Mar 29 10:10:57 CAT 2022" lastAction="null" bids="0" runtime="0.0" deadline="60rounds">
+<resultsOfAgent agent="BoaPartyExample" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\bilateralexamples\BoaPartyExample.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="failed to construct agent : Execution failed of init&lt;CadacDC1@133,Participant[Party133,PartyRepositoryItem[CadacDC1,C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class,ANAC2017, is mediator=false],etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml]&gt;:java.lang.NullPointerException: null" currentTime="Tue Mar 29 10:10:57 CAT 2022" lastAction="null" bids="0" runtime="0.0" deadline="60rounds">
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="failed to construct agent : Execution failed of init&lt;CadacDC1@134,Participant[Party134,PartyRepositoryItem[CadacDC1,C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class,ANAC2017, is mediator=false],etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml]&gt;:java.lang.NullPointerException: null" currentTime="Tue Mar 29 10:10:57 CAT 2022" lastAction="null" bids="0" runtime="0.0" deadline="60rounds">
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="BoaPartyExample" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\bilateralexamples\BoaPartyExample.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="failed to construct agent : Execution failed of init&lt;CadacDC1@138,Participant[Party138,PartyRepositoryItem[CadacDC1,C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class,ANAC2017, is mediator=false],etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml]&gt;:java.lang.NullPointerException: null" currentTime="Tue Mar 29 10:10:57 CAT 2022" lastAction="null" bids="0" runtime="0.0" deadline="60rounds">
+<resultsOfAgent agent="BoaPartyExample" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\bilateralexamples\BoaPartyExample.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="BoaPartyExample" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\bilateralexamples\BoaPartyExample.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="failed to construct agent : Execution failed of init&lt;CadacDC1@141,Participant[Party141,PartyRepositoryItem[CadacDC1,C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class,ANAC2017, is mediator=false],etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml]&gt;:java.lang.NullPointerException: null" currentTime="Tue Mar 29 10:10:57 CAT 2022" lastAction="null" bids="0" runtime="0.0" deadline="60rounds">
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="BoaPartyExample" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\bilateralexamples\BoaPartyExample.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="failed to construct agent : Execution failed of init&lt;CadacDC1@143,Participant[Party143,PartyRepositoryItem[CadacDC1,C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class,ANAC2017, is mediator=false],etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml]&gt;:java.lang.NullPointerException: null" currentTime="Tue Mar 29 10:10:58 CAT 2022" lastAction="null" bids="0" runtime="0.0" deadline="60rounds">
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="BoaPartyExample" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\bilateralexamples\BoaPartyExample.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="BoaPartyExample" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\bilateralexamples\BoaPartyExample.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Tue Mar 29 10:10:58 CAT 2022" timeOfAgreement="0.8524590163934426" lastAction="(Accept  bid:Bid[06-09: 0 kW,, 09-19: 0 kW,, 19-22: 75 kW,, 22-06: 100 kW,])" domain="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid.xml" bids="147" runtime="0.2903764" finalOutcome="Bid[06-09: 0 kW,, 09-19: 0 kW,, 19-22: 75 kW,, 22-06: 100 kW,]" startingAgent="BoaPartyExample@146" deadline="60rounds">
+<resultsOfAgent agent="BoaPartyExample@146" agentDesc="Boa Party Example" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="bilateralexamples.BoaPartyExample" userUtility="0.7542356331479932" finalUtility="0.7542356331479932" discountedUtility="0.7542356331479932" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="BoaPartyExample@147" agentDesc="Boa Party Example" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="bilateralexamples.BoaPartyExample" userUtility="0.7495400596071685" finalUtility="0.7495400596071685" discountedUtility="0.7495400596071685" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="BoaPartyExample@148" agentDesc="Boa Party Example" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="bilateralexamples.BoaPartyExample" userUtility="0.6267589111536247" finalUtility="0.6267589111536247" discountedUtility="0.6267589111536247" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="Failed to execute protocol: null" currentTime="Tue Mar 29 10:10:59 CAT 2022" lastAction="null" bids="137" runtime="0.4070265" deadline="60rounds">
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="BoaPartyExample" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\bilateralexamples\BoaPartyExample.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="BoaPartyExample" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\bilateralexamples\BoaPartyExample.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="failed to construct agent : Execution failed of init&lt;CadacDC1@152,Participant[Party152,PartyRepositoryItem[CadacDC1,C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class,ANAC2017, is mediator=false],etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml]&gt;:java.lang.NullPointerException: null" currentTime="Tue Mar 29 10:10:59 CAT 2022" lastAction="null" bids="0" runtime="0.0" deadline="60rounds">
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="BoaPartyExample" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\bilateralexamples\BoaPartyExample.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="Failed to execute protocol: null" currentTime="Tue Mar 29 10:10:59 CAT 2022" lastAction="(Accept  bid:Bid[06-09: 0 kW,, 09-19: 0 kW,, 19-22: 75 kW,, 22-06: 100 kW,])" bids="153" runtime="0.4393983" deadline="60rounds">
+<resultsOfAgent agent="BoaPartyExample" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\bilateralexamples\BoaPartyExample.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="BoaPartyExample" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\bilateralexamples\BoaPartyExample.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="Failed to execute protocol: null" currentTime="Tue Mar 29 10:11:00 CAT 2022" lastAction="(Accept  bid:Bid[06-09: 100 kW,, 09-19: 0 kW,, 19-22: 100 kW,, 22-06: 100 kW,])" bids="165" runtime="0.3945944" deadline="60rounds">
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="BoaPartyExample" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\bilateralexamples\BoaPartyExample.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="failed to construct agent : Execution failed of init&lt;CadacDC1@161,Participant[Party161,PartyRepositoryItem[CadacDC1,C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class,ANAC2017, is mediator=false],etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml]&gt;:java.lang.NullPointerException: null" currentTime="Tue Mar 29 10:11:00 CAT 2022" lastAction="null" bids="0" runtime="0.0" deadline="60rounds">
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="failed to construct agent : Execution failed of init&lt;CadacDC1@165,Participant[Party165,PartyRepositoryItem[CadacDC1,C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class,ANAC2017, is mediator=false],etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml]&gt;:java.lang.NullPointerException: null" currentTime="Tue Mar 29 10:11:00 CAT 2022" lastAction="null" bids="0" runtime="0.0" deadline="60rounds">
+<resultsOfAgent agent="BoaPartyExample" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\bilateralexamples\BoaPartyExample.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="failed to construct agent : Execution failed of init&lt;CadacDC1@168,Participant[Party168,PartyRepositoryItem[CadacDC1,C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class,ANAC2017, is mediator=false],etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml]&gt;:java.lang.NullPointerException: null" currentTime="Tue Mar 29 10:11:00 CAT 2022" lastAction="null" bids="0" runtime="0.0" deadline="60rounds">
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="failed to construct agent : Execution failed of init&lt;CadacDC1@170,Participant[Party170,PartyRepositoryItem[CadacDC1,C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class,ANAC2017, is mediator=false],etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml]&gt;:java.lang.NullPointerException: null" currentTime="Tue Mar 29 10:11:00 CAT 2022" lastAction="null" bids="0" runtime="0.0" deadline="60rounds">
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="BoaPartyExample" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\bilateralexamples\BoaPartyExample.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="Failed to execute protocol: null" currentTime="Tue Mar 29 10:11:00 CAT 2022" lastAction="(Accept  bid:Bid[06-09: 0 kW,, 09-19: 0 kW,, 19-22: 75 kW,, 22-06: 100 kW,])" bids="154" runtime="0.161022" deadline="60rounds">
+<resultsOfAgent agent="BoaPartyExample" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\bilateralexamples\BoaPartyExample.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="BoaPartyExample" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\bilateralexamples\BoaPartyExample.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="Failed to execute protocol: null" currentTime="Tue Mar 29 10:11:01 CAT 2022" lastAction="(Accept  bid:Bid[06-09: 100 kW,, 09-19: 0 kW,, 19-22: 100 kW,, 22-06: 100 kW,])" bids="178" runtime="0.4103279" deadline="60rounds">
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="BoaPartyExample" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\bilateralexamples\BoaPartyExample.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="failed to construct agent : Execution failed of init&lt;CadacDC1@179,Participant[Party179,PartyRepositoryItem[CadacDC1,C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class,ANAC2017, is mediator=false],etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml]&gt;:java.lang.NullPointerException: null" currentTime="Tue Mar 29 10:11:01 CAT 2022" lastAction="null" bids="0" runtime="0.0" deadline="60rounds">
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="Failed to execute protocol: null" currentTime="Tue Mar 29 10:11:01 CAT 2022" lastAction="(Accept  bid:Bid[06-09: 0 kW,, 09-19: 100 kW,, 19-22: 75 kW,, 22-06: 75 kW,])" bids="165" runtime="0.3965053" deadline="60rounds">
+<resultsOfAgent agent="BoaPartyExample" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\bilateralexamples\BoaPartyExample.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Tue Mar 29 10:11:02 CAT 2022" lastAction="(Offer  bid:Bid[06-09: 0 kW,, 09-19: 100 kW,, 19-22: 75 kW,, 22-06: 75 kW,])" domain="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid.xml" bids="180" runtime="0.3148829" finalOutcome="-" startingAgent="TimeDependentAgentHardliner@185" deadline="60rounds">
+<resultsOfAgent agent="TimeDependentAgentHardliner@185" agentDesc="does not concede" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="agents.TimeDependentAgentHardliner" userUtility="0.0" finalUtility="0.0" discountedUtility="0.0" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner@186" agentDesc="does not concede" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="agents.TimeDependentAgentHardliner" userUtility="0.0" finalUtility="0.0" discountedUtility="0.0" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner@187" agentDesc="does not concede" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="agents.TimeDependentAgentHardliner" userUtility="0.0" finalUtility="0.0" discountedUtility="0.0" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+</NegotiationOutcome></Tournament>

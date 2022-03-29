@@ -1,0 +1,7 @@
+<?xml version="1.0" ?><Session>
+<NegotiationOutcome exception="Failed to execute protocol: Negotiating party AgentNP1@0 timed out in chooseAction() method.: agent AgentNP1@0 passed deadline and was killed" currentTime="Tue Mar 29 13:32:13 CAT 2022" lastAction="null" bids="84" runtime="60.932009" deadline="60rounds">
+<resultsOfAgent agent="AgentNP1" utilspace="etc/templates/partydomain/party1_utility.xml" agentClass="agents.anac.y2018.agentnp1.AgentNP1" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/partydomain/party2_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome></Session>

@@ -1,0 +1,217 @@
+<?xml version="1.0" ?><Tournament>
+<NegotiationOutcome exception="failed to construct agent : Execution failed of init&lt;CadacDC1@0,Participant[Party0,PartyRepositoryItem[CadacDC1,C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class,ANAC2017, is mediator=false],etc/templates/partydomain/party1_utility.xml]&gt;:java.lang.NullPointerException: null" currentTime="Tue Mar 29 10:04:41 CAT 2022" lastAction="null" bids="0" runtime="0.0" deadline="60rounds">
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/partydomain/party1_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/partydomain/party2_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/partydomain/party3_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="failed to construct agent : Execution failed of init&lt;CadacDC1@4,Participant[Party4,PartyRepositoryItem[CadacDC1,C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class,ANAC2017, is mediator=false],etc/templates/partydomain/party2_utility.xml]&gt;:java.lang.NullPointerException: null" currentTime="Tue Mar 29 10:04:42 CAT 2022" lastAction="null" bids="0" runtime="0.0" deadline="60rounds">
+<resultsOfAgent agent="Cadac1" utilspace="etc/templates/partydomain/party1_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\agents\anac\y2016\caduceus\Cadac1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/partydomain/party2_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/partydomain/party3_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="failed to construct agent : Execution failed of init&lt;CadacDC1@7,Participant[Party7,PartyRepositoryItem[CadacDC1,C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class,ANAC2017, is mediator=false],etc/templates/partydomain/party2_utility.xml]&gt;:java.lang.NullPointerException: null" currentTime="Tue Mar 29 10:04:42 CAT 2022" lastAction="null" bids="0" runtime="0.0" deadline="60rounds">
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/partydomain/party1_utility.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/partydomain/party2_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/partydomain/party3_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="failed to construct agent : Execution failed of init&lt;CadacDC1@9,Participant[Party9,PartyRepositoryItem[CadacDC1,C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class,ANAC2017, is mediator=false],etc/templates/partydomain/party1_utility.xml]&gt;:java.lang.NullPointerException: null" currentTime="Tue Mar 29 10:04:42 CAT 2022" lastAction="null" bids="0" runtime="0.0" deadline="60rounds">
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/partydomain/party1_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="Cadac1" utilspace="etc/templates/partydomain/party2_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\agents\anac\y2016\caduceus\Cadac1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/partydomain/party3_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="failed to construct agent : Execution failed of init&lt;CadacDC1@14,Participant[Party14,PartyRepositoryItem[CadacDC1,C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class,ANAC2017, is mediator=false],etc/templates/partydomain/party3_utility.xml]&gt;:java.lang.NullPointerException: null" currentTime="Tue Mar 29 10:04:42 CAT 2022" lastAction="null" bids="0" runtime="0.0" deadline="60rounds">
+<resultsOfAgent agent="Cadac1" utilspace="etc/templates/partydomain/party1_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\agents\anac\y2016\caduceus\Cadac1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="Cadac1" utilspace="etc/templates/partydomain/party2_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\agents\anac\y2016\caduceus\Cadac1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/partydomain/party3_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="failed to construct agent : Execution failed of init&lt;CadacDC1@17,Participant[Party17,PartyRepositoryItem[CadacDC1,C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class,ANAC2017, is mediator=false],etc/templates/partydomain/party3_utility.xml]&gt;:java.lang.NullPointerException: null" currentTime="Tue Mar 29 10:04:42 CAT 2022" lastAction="null" bids="0" runtime="0.0" deadline="60rounds">
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/partydomain/party1_utility.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="Cadac1" utilspace="etc/templates/partydomain/party2_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\agents\anac\y2016\caduceus\Cadac1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/partydomain/party3_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="failed to construct agent : Execution failed of init&lt;CadacDC1@18,Participant[Party18,PartyRepositoryItem[CadacDC1,C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class,ANAC2017, is mediator=false],etc/templates/partydomain/party1_utility.xml]&gt;:java.lang.NullPointerException: null" currentTime="Tue Mar 29 10:04:42 CAT 2022" lastAction="null" bids="0" runtime="0.0" deadline="60rounds">
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/partydomain/party1_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/partydomain/party2_utility.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/partydomain/party3_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="failed to construct agent : Execution failed of init&lt;CadacDC1@23,Participant[Party23,PartyRepositoryItem[CadacDC1,C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class,ANAC2017, is mediator=false],etc/templates/partydomain/party3_utility.xml]&gt;:java.lang.NullPointerException: null" currentTime="Tue Mar 29 10:04:42 CAT 2022" lastAction="null" bids="0" runtime="0.0" deadline="60rounds">
+<resultsOfAgent agent="Cadac1" utilspace="etc/templates/partydomain/party1_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\agents\anac\y2016\caduceus\Cadac1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/partydomain/party2_utility.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/partydomain/party3_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="failed to construct agent : Execution failed of init&lt;CadacDC1@26,Participant[Party26,PartyRepositoryItem[CadacDC1,C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class,ANAC2017, is mediator=false],etc/templates/partydomain/party3_utility.xml]&gt;:java.lang.NullPointerException: null" currentTime="Tue Mar 29 10:04:42 CAT 2022" lastAction="null" bids="0" runtime="0.0" deadline="60rounds">
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/partydomain/party1_utility.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/partydomain/party2_utility.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/partydomain/party3_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="failed to construct agent : Execution failed of init&lt;CadacDC1@27,Participant[Party27,PartyRepositoryItem[CadacDC1,C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class,ANAC2017, is mediator=false],etc/templates/partydomain/party1_utility.xml]&gt;:java.lang.NullPointerException: null" currentTime="Tue Mar 29 10:04:42 CAT 2022" lastAction="null" bids="0" runtime="0.0" deadline="60rounds">
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/partydomain/party1_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/partydomain/party2_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="Cadac1" utilspace="etc/templates/partydomain/party3_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\agents\anac\y2016\caduceus\Cadac1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="failed to construct agent : Execution failed of init&lt;CadacDC1@31,Participant[Party31,PartyRepositoryItem[CadacDC1,C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class,ANAC2017, is mediator=false],etc/templates/partydomain/party2_utility.xml]&gt;:java.lang.NullPointerException: null" currentTime="Tue Mar 29 10:04:43 CAT 2022" lastAction="null" bids="0" runtime="0.0" deadline="60rounds">
+<resultsOfAgent agent="Cadac1" utilspace="etc/templates/partydomain/party1_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\agents\anac\y2016\caduceus\Cadac1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/partydomain/party2_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="Cadac1" utilspace="etc/templates/partydomain/party3_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\agents\anac\y2016\caduceus\Cadac1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="failed to construct agent : Execution failed of init&lt;CadacDC1@34,Participant[Party34,PartyRepositoryItem[CadacDC1,C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class,ANAC2017, is mediator=false],etc/templates/partydomain/party2_utility.xml]&gt;:java.lang.NullPointerException: null" currentTime="Tue Mar 29 10:04:43 CAT 2022" lastAction="null" bids="0" runtime="0.0" deadline="60rounds">
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/partydomain/party1_utility.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/partydomain/party2_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="Cadac1" utilspace="etc/templates/partydomain/party3_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\agents\anac\y2016\caduceus\Cadac1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="failed to construct agent : Execution failed of init&lt;CadacDC1@36,Participant[Party36,PartyRepositoryItem[CadacDC1,C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class,ANAC2017, is mediator=false],etc/templates/partydomain/party1_utility.xml]&gt;:java.lang.NullPointerException: null" currentTime="Tue Mar 29 10:04:43 CAT 2022" lastAction="null" bids="0" runtime="0.0" deadline="60rounds">
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/partydomain/party1_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="Cadac1" utilspace="etc/templates/partydomain/party2_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\agents\anac\y2016\caduceus\Cadac1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="Cadac1" utilspace="etc/templates/partydomain/party3_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\agents\anac\y2016\caduceus\Cadac1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Tue Mar 29 10:04:45 CAT 2022" timeOfAgreement="0.8688524590163934" lastAction="(Accept  bid:Bid[Food: Chips and Nuts, Drinks: Handmade Cocktails, Location: Party Tent, Invitations: Custom, Printed, Music: MP3, Cleanup: Water and Soap])" domain="etc/templates/partydomain/party_domain.xml" bids="154" runtime="1.7236397" finalOutcome="Bid[Food: Chips and Nuts, Drinks: Handmade Cocktails, Location: Party Tent, Invitations: Custom, Printed, Music: MP3, Cleanup: Water and Soap]" startingAgent="Cadac1@39" deadline="60rounds">
+<resultsOfAgent agent="Cadac1@39" agentDesc="ANAC2016" utilspace="etc/templates/partydomain/party1_utility.xml" agentClass="agents.anac.y2016.caduceus.Cadac1" userUtility="0.6575983740121527" finalUtility="0.6575983740121527" discountedUtility="0.6575983740121527" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="Cadac1@40" agentDesc="ANAC2016" utilspace="etc/templates/partydomain/party2_utility.xml" agentClass="agents.anac.y2016.caduceus.Cadac1" userUtility="0.8522529669934003" finalUtility="0.8522529669934003" discountedUtility="0.8522529669934003" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="Cadac1@41" agentDesc="ANAC2016" utilspace="etc/templates/partydomain/party3_utility.xml" agentClass="agents.anac.y2016.caduceus.Cadac1" userUtility="0.8512769996675457" finalUtility="0.8512769996675457" discountedUtility="0.8512769996675457" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="Failed to execute protocol: null" currentTime="Tue Mar 29 10:04:46 CAT 2022" lastAction="null" bids="155" runtime="1.1622756" deadline="60rounds">
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/partydomain/party1_utility.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="Cadac1" utilspace="etc/templates/partydomain/party2_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\agents\anac\y2016\caduceus\Cadac1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="Cadac1" utilspace="etc/templates/partydomain/party3_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\agents\anac\y2016\caduceus\Cadac1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="failed to construct agent : Execution failed of init&lt;CadacDC1@45,Participant[Party45,PartyRepositoryItem[CadacDC1,C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class,ANAC2017, is mediator=false],etc/templates/partydomain/party1_utility.xml]&gt;:java.lang.NullPointerException: null" currentTime="Tue Mar 29 10:04:46 CAT 2022" lastAction="null" bids="0" runtime="0.0" deadline="60rounds">
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/partydomain/party1_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/partydomain/party2_utility.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="Cadac1" utilspace="etc/templates/partydomain/party3_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\agents\anac\y2016\caduceus\Cadac1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="Failed to execute protocol: null" currentTime="Tue Mar 29 10:04:48 CAT 2022" lastAction="(Accept  bid:Bid[Food: Chips and Nuts, Drinks: Handmade Cocktails, Location: Party Room, Invitations: Custom, Handmade, Music: MP3, Cleanup: Hired Help])" bids="153" runtime="1.2719152" deadline="60rounds">
+<resultsOfAgent agent="Cadac1" utilspace="etc/templates/partydomain/party1_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\agents\anac\y2016\caduceus\Cadac1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/partydomain/party2_utility.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="Cadac1" utilspace="etc/templates/partydomain/party3_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\agents\anac\y2016\caduceus\Cadac1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="Failed to execute protocol: null" currentTime="Tue Mar 29 10:04:49 CAT 2022" lastAction="null" bids="173" runtime="0.5184607" deadline="60rounds">
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/partydomain/party1_utility.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/partydomain/party2_utility.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="Cadac1" utilspace="etc/templates/partydomain/party3_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\agents\anac\y2016\caduceus\Cadac1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="failed to construct agent : Execution failed of init&lt;CadacDC1@54,Participant[Party54,PartyRepositoryItem[CadacDC1,C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class,ANAC2017, is mediator=false],etc/templates/partydomain/party1_utility.xml]&gt;:java.lang.NullPointerException: null" currentTime="Tue Mar 29 10:04:49 CAT 2022" lastAction="null" bids="0" runtime="0.0" deadline="60rounds">
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/partydomain/party1_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/partydomain/party2_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/partydomain/party3_utility.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="failed to construct agent : Execution failed of init&lt;CadacDC1@58,Participant[Party58,PartyRepositoryItem[CadacDC1,C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class,ANAC2017, is mediator=false],etc/templates/partydomain/party2_utility.xml]&gt;:java.lang.NullPointerException: null" currentTime="Tue Mar 29 10:04:49 CAT 2022" lastAction="null" bids="0" runtime="0.0" deadline="60rounds">
+<resultsOfAgent agent="Cadac1" utilspace="etc/templates/partydomain/party1_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\agents\anac\y2016\caduceus\Cadac1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/partydomain/party2_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/partydomain/party3_utility.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="failed to construct agent : Execution failed of init&lt;CadacDC1@61,Participant[Party61,PartyRepositoryItem[CadacDC1,C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class,ANAC2017, is mediator=false],etc/templates/partydomain/party2_utility.xml]&gt;:java.lang.NullPointerException: null" currentTime="Tue Mar 29 10:04:49 CAT 2022" lastAction="null" bids="0" runtime="0.0" deadline="60rounds">
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/partydomain/party1_utility.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/partydomain/party2_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/partydomain/party3_utility.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="failed to construct agent : Execution failed of init&lt;CadacDC1@63,Participant[Party63,PartyRepositoryItem[CadacDC1,C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class,ANAC2017, is mediator=false],etc/templates/partydomain/party1_utility.xml]&gt;:java.lang.NullPointerException: null" currentTime="Tue Mar 29 10:04:49 CAT 2022" lastAction="null" bids="0" runtime="0.0" deadline="60rounds">
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/partydomain/party1_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="Cadac1" utilspace="etc/templates/partydomain/party2_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\agents\anac\y2016\caduceus\Cadac1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/partydomain/party3_utility.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="Failed to execute protocol: null" currentTime="Tue Mar 29 10:04:51 CAT 2022" lastAction="(Accept  bid:Bid[Food: Chips and Nuts, Drinks: Handmade Cocktails, Location: Party Room, Invitations: Plain, Music: MP3, Cleanup: Water and Soap])" bids="151" runtime="1.2444442" deadline="60rounds">
+<resultsOfAgent agent="Cadac1" utilspace="etc/templates/partydomain/party1_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\agents\anac\y2016\caduceus\Cadac1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="Cadac1" utilspace="etc/templates/partydomain/party2_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\agents\anac\y2016\caduceus\Cadac1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/partydomain/party3_utility.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="Failed to execute protocol: null" currentTime="Tue Mar 29 10:04:52 CAT 2022" lastAction="(Accept  bid:Bid[Food: Chips and Nuts, Drinks: Beer Only, Location: Party Room, Invitations: Custom, Handmade, Music: DJ, Cleanup: Specialized Materials])" bids="175" runtime="0.8376202" deadline="60rounds">
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/partydomain/party1_utility.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="Cadac1" utilspace="etc/templates/partydomain/party2_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\agents\anac\y2016\caduceus\Cadac1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/partydomain/party3_utility.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="failed to construct agent : Execution failed of init&lt;CadacDC1@72,Participant[Party72,PartyRepositoryItem[CadacDC1,C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class,ANAC2017, is mediator=false],etc/templates/partydomain/party1_utility.xml]&gt;:java.lang.NullPointerException: null" currentTime="Tue Mar 29 10:04:52 CAT 2022" lastAction="null" bids="0" runtime="0.0" deadline="60rounds">
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/partydomain/party1_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/partydomain/party2_utility.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/partydomain/party3_utility.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome exception="Failed to execute protocol: null" currentTime="Tue Mar 29 10:04:53 CAT 2022" lastAction="(Accept  bid:Bid[Food: Chips and Nuts, Drinks: Non-Alcoholic, Location: Party Tent, Invitations: Plain, Music: Band, Cleanup: Hired Help])" bids="174" runtime="0.8197241" deadline="60rounds">
+<resultsOfAgent agent="Cadac1" utilspace="etc/templates/partydomain/party1_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\agents\anac\y2016\caduceus\Cadac1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/partydomain/party2_utility.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/partydomain/party3_utility.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Tue Mar 29 10:04:53 CAT 2022" lastAction="(Offer  bid:Bid[Food: Chips and Nuts, Drinks: Non-Alcoholic, Location: Party Tent, Invitations: Plain, Music: Band, Cleanup: Hired Help])" domain="etc/templates/partydomain/party_domain.xml" bids="180" runtime="0.4008286" finalOutcome="-" startingAgent="TimeDependentAgentHardliner@78" deadline="60rounds">
+<resultsOfAgent agent="TimeDependentAgentHardliner@78" agentDesc="does not concede" utilspace="etc/templates/partydomain/party1_utility.xml" agentClass="agents.TimeDependentAgentHardliner" userUtility="0.0" finalUtility="0.0" discountedUtility="0.0" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner@79" agentDesc="does not concede" utilspace="etc/templates/partydomain/party2_utility.xml" agentClass="agents.TimeDependentAgentHardliner" userUtility="0.0" finalUtility="0.0" discountedUtility="0.0" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner@80" agentDesc="does not concede" utilspace="etc/templates/partydomain/party3_utility.xml" agentClass="agents.TimeDependentAgentHardliner" userUtility="0.0" finalUtility="0.0" discountedUtility="0.0" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+</NegotiationOutcome></Tournament>

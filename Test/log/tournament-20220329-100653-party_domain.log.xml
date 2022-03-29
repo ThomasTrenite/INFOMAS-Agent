@@ -1,0 +1,25 @@
+<?xml version="1.0" ?><Tournament>
+<NegotiationOutcome currentTime="Tue Mar 29 10:06:54 CAT 2022" timeOfAgreement="0.9016393442622951" lastAction="(Accept  bid:Bid[Food: Chips and Nuts, Drinks: Handmade Cocktails, Location: Party Room, Invitations: Plain, Music: DJ, Cleanup: Water and Soap])" domain="etc/templates/partydomain/party_domain.xml" bids="109" runtime="0.9809511" finalOutcome="Bid[Food: Chips and Nuts, Drinks: Handmade Cocktails, Location: Party Room, Invitations: Plain, Music: DJ, Cleanup: Water and Soap]" startingAgent="CadacDC1@81" deadline="60rounds">
+<resultsOfAgent agent="CadacDC1@81" agentDesc="ANAC2017" utilspace="etc/templates/partydomain/party2_utility.xml" agentClass="caduceusdc16.CadacDC1" userUtility="0.8400142500258816" finalUtility="0.8400142500258816" discountedUtility="0.8400142500258816" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1@82" agentDesc="ANAC2017" utilspace="etc/templates/partydomain/party4_utility.xml" agentClass="caduceusdc16.CadacDC1" userUtility="0.77380885" finalUtility="0.77380885" discountedUtility="0.77380885" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Tue Mar 29 10:06:55 CAT 2022" timeOfAgreement="0.9344262295081968" lastAction="(Accept  bid:Bid[Food: Catering, Drinks: Handmade Cocktails, Location: Party Room, Invitations: Custom, Printed, Music: MP3, Cleanup: Water and Soap])" domain="etc/templates/partydomain/party_domain.xml" bids="113" runtime="0.6500401" finalOutcome="Bid[Food: Catering, Drinks: Handmade Cocktails, Location: Party Room, Invitations: Custom, Printed, Music: MP3, Cleanup: Water and Soap]" startingAgent="TimeDependentAgentHardliner@83" deadline="60rounds">
+<resultsOfAgent agent="TimeDependentAgentHardliner@83" agentDesc="does not concede" utilspace="etc/templates/partydomain/party2_utility.xml" agentClass="agents.TimeDependentAgentHardliner" userUtility="1.0" finalUtility="1.0" discountedUtility="1.0" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1@84" agentDesc="ANAC2017" utilspace="etc/templates/partydomain/party4_utility.xml" agentClass="caduceusdc16.CadacDC1" userUtility="0.49999960000000004" finalUtility="0.49999960000000004" discountedUtility="0.49999960000000004" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Tue Mar 29 10:06:56 CAT 2022" timeOfAgreement="0.9344262295081968" lastAction="(Accept  bid:Bid[Food: Chips and Nuts, Drinks: Non-Alcoholic, Location: Party Room, Invitations: Plain, Music: DJ, Cleanup: Special Equiment])" domain="etc/templates/partydomain/party_domain.xml" bids="112" runtime="0.4670772" finalOutcome="Bid[Food: Chips and Nuts, Drinks: Non-Alcoholic, Location: Party Room, Invitations: Plain, Music: DJ, Cleanup: Special Equiment]" startingAgent="CadacDC1@85" deadline="60rounds">
+<resultsOfAgent agent="CadacDC1@85" agentDesc="ANAC2017" utilspace="etc/templates/partydomain/party2_utility.xml" agentClass="caduceusdc16.CadacDC1" userUtility="0.4481811729268628" finalUtility="0.4481811729268628" discountedUtility="0.4481811729268628" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner@86" agentDesc="does not concede" utilspace="etc/templates/partydomain/party4_utility.xml" agentClass="agents.TimeDependentAgentHardliner" userUtility="0.9999991" finalUtility="0.9999991" discountedUtility="0.9999991" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Tue Mar 29 10:06:56 CAT 2022" lastAction="(Offer  bid:Bid[Food: Chips and Nuts, Drinks: Non-Alcoholic, Location: Party Room, Invitations: Plain, Music: DJ, Cleanup: Special Equiment])" domain="etc/templates/partydomain/party_domain.xml" bids="120" runtime="0.062764" finalOutcome="-" startingAgent="TimeDependentAgentHardliner@87" deadline="60rounds">
+<resultsOfAgent agent="TimeDependentAgentHardliner@87" agentDesc="does not concede" utilspace="etc/templates/partydomain/party2_utility.xml" agentClass="agents.TimeDependentAgentHardliner" userUtility="0.0" finalUtility="0.0" discountedUtility="0.0" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner@88" agentDesc="does not concede" utilspace="etc/templates/partydomain/party4_utility.xml" agentClass="agents.TimeDependentAgentHardliner" userUtility="0.0" finalUtility="0.0" discountedUtility="0.0" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+</NegotiationOutcome></Tournament>

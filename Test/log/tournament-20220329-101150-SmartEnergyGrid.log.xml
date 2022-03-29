@@ -1,0 +1,163 @@
+<?xml version="1.0" ?><Tournament>
+<NegotiationOutcome currentTime="Tue Mar 29 10:11:51 CAT 2022" timeOfAgreement="0.8524590163934426" lastAction="(Accept  bid:Bid[06-09: 0 kW,, 09-19: 75 kW,, 19-22: 25 kW,, 22-06: 0 kW,])" domain="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid.xml" bids="102" runtime="0.1843678" finalOutcome="Bid[06-09: 0 kW,, 09-19: 75 kW,, 19-22: 25 kW,, 22-06: 0 kW,]" startingAgent="CadacDC1@188" deadline="60rounds">
+<resultsOfAgent agent="CadacDC1@188" agentDesc="ANAC2017" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="caduceusdc16.CadacDC1" userUtility="0.9284942905653605" finalUtility="0.9284942905653605" discountedUtility="0.9284942905653605" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1@189" agentDesc="ANAC2017" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="caduceusdc16.CadacDC1" userUtility="0.6713020762265101" finalUtility="0.6713020762265101" discountedUtility="0.6713020762265101" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Tue Mar 29 10:11:51 CAT 2022" timeOfAgreement="0.8360655737704918" lastAction="(Accept  bid:Bid[06-09: 0 kW,, 09-19: 25 kW,, 19-22: 75 kW,, 22-06: 75 kW,])" domain="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid.xml" bids="101" runtime="0.2446587" finalOutcome="Bid[06-09: 0 kW,, 09-19: 25 kW,, 19-22: 75 kW,, 22-06: 75 kW,]" startingAgent="BoaPartyExample@190" deadline="60rounds">
+<resultsOfAgent agent="BoaPartyExample@190" agentDesc="Boa Party Example" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="bilateralexamples.BoaPartyExample" userUtility="0.7650951895994117" finalUtility="0.7650951895994117" discountedUtility="0.7650951895994117" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1@191" agentDesc="ANAC2017" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="caduceusdc16.CadacDC1" userUtility="0.7228812351228098" finalUtility="0.7228812351228098" discountedUtility="0.7228812351228098" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Tue Mar 29 10:11:52 CAT 2022" timeOfAgreement="0.9672131147540983" lastAction="(Accept  bid:Bid[06-09: 0 kW,, 09-19: 0 kW,, 19-22: 0 kW,, 22-06: 0 kW,])" domain="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid.xml" bids="117" runtime="0.2316381" finalOutcome="Bid[06-09: 0 kW,, 09-19: 0 kW,, 19-22: 0 kW,, 22-06: 0 kW,]" startingAgent="TimeDependentAgentHardliner@192" deadline="60rounds">
+<resultsOfAgent agent="TimeDependentAgentHardliner@192" agentDesc="does not concede" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="agents.TimeDependentAgentHardliner" userUtility="1.0" finalUtility="1.0" discountedUtility="1.0" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1@193" agentDesc="ANAC2017" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="caduceusdc16.CadacDC1" userUtility="0.2271327855920689" finalUtility="0.2271327855920689" discountedUtility="0.2271327855920689" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Tue Mar 29 10:11:52 CAT 2022" timeOfAgreement="0.8360655737704918" lastAction="(Accept  bid:Bid[06-09: 0 kW,, 09-19: 75 kW,, 19-22: 25 kW,, 22-06: 0 kW,])" domain="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid.xml" bids="100" runtime="0.236799" finalOutcome="Bid[06-09: 0 kW,, 09-19: 75 kW,, 19-22: 25 kW,, 22-06: 0 kW,]" startingAgent="CadacDC1@194" deadline="60rounds">
+<resultsOfAgent agent="CadacDC1@194" agentDesc="ANAC2017" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="caduceusdc16.CadacDC1" userUtility="0.9284942905653605" finalUtility="0.9284942905653605" discountedUtility="0.9284942905653605" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="BoaPartyExample@195" agentDesc="Boa Party Example" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="bilateralexamples.BoaPartyExample" userUtility="0.6713020762265101" finalUtility="0.6713020762265101" discountedUtility="0.6713020762265101" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Tue Mar 29 10:11:52 CAT 2022" timeOfAgreement="0.7377049180327869" lastAction="(Accept  bid:Bid[06-09: 0 kW,, 09-19: 100 kW,, 19-22: 25 kW,, 22-06: 75 kW,])" domain="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid.xml" bids="89" runtime="0.0615711" finalOutcome="Bid[06-09: 0 kW,, 09-19: 100 kW,, 19-22: 25 kW,, 22-06: 75 kW,]" startingAgent="BoaPartyExample@196" deadline="60rounds">
+<resultsOfAgent agent="BoaPartyExample@196" agentDesc="Boa Party Example" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="bilateralexamples.BoaPartyExample" userUtility="0.867387981487807" finalUtility="0.867387981487807" discountedUtility="0.867387981487807" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="BoaPartyExample@197" agentDesc="Boa Party Example" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="bilateralexamples.BoaPartyExample" userUtility="0.8828955652623546" finalUtility="0.8828955652623546" discountedUtility="0.8828955652623546" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Tue Mar 29 10:11:53 CAT 2022" timeOfAgreement="0.9672131147540983" lastAction="(Accept  bid:Bid[06-09: 0 kW,, 09-19: 0 kW,, 19-22: 0 kW,, 22-06: 0 kW,])" domain="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid.xml" bids="117" runtime="0.1474358" finalOutcome="Bid[06-09: 0 kW,, 09-19: 0 kW,, 19-22: 0 kW,, 22-06: 0 kW,]" startingAgent="TimeDependentAgentHardliner@198" deadline="60rounds">
+<resultsOfAgent agent="TimeDependentAgentHardliner@198" agentDesc="does not concede" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="agents.TimeDependentAgentHardliner" userUtility="1.0" finalUtility="1.0" discountedUtility="1.0" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="BoaPartyExample@199" agentDesc="Boa Party Example" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="bilateralexamples.BoaPartyExample" userUtility="0.2271327855920689" finalUtility="0.2271327855920689" discountedUtility="0.2271327855920689" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Tue Mar 29 10:11:53 CAT 2022" timeOfAgreement="0.9344262295081968" lastAction="(Accept  bid:Bid[06-09: 0 kW,, 09-19: 100 kW,, 19-22: 75 kW,, 22-06: 75 kW,])" domain="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid.xml" bids="112" runtime="0.0987704" finalOutcome="Bid[06-09: 0 kW,, 09-19: 100 kW,, 19-22: 75 kW,, 22-06: 75 kW,]" startingAgent="CadacDC1@200" deadline="60rounds">
+<resultsOfAgent agent="CadacDC1@200" agentDesc="ANAC2017" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="caduceusdc16.CadacDC1" userUtility="0.7201011159598114" finalUtility="0.7201011159598114" discountedUtility="0.7201011159598114" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner@201" agentDesc="does not concede" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="agents.TimeDependentAgentHardliner" userUtility="0.9999999999999999" finalUtility="0.9999999999999999" discountedUtility="0.9999999999999999" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Tue Mar 29 10:11:53 CAT 2022" timeOfAgreement="0.8688524590163934" lastAction="(Accept  bid:Bid[06-09: 0 kW,, 09-19: 100 kW,, 19-22: 75 kW,, 22-06: 75 kW,])" domain="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid.xml" bids="104" runtime="0.0471535" finalOutcome="Bid[06-09: 0 kW,, 09-19: 100 kW,, 19-22: 75 kW,, 22-06: 75 kW,]" startingAgent="BoaPartyExample@202" deadline="60rounds">
+<resultsOfAgent agent="BoaPartyExample@202" agentDesc="Boa Party Example" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="bilateralexamples.BoaPartyExample" userUtility="0.7201011159598114" finalUtility="0.7201011159598114" discountedUtility="0.7201011159598114" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner@203" agentDesc="does not concede" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="agents.TimeDependentAgentHardliner" userUtility="0.9999999999999999" finalUtility="0.9999999999999999" discountedUtility="0.9999999999999999" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Tue Mar 29 10:11:53 CAT 2022" lastAction="(Offer  bid:Bid[06-09: 0 kW,, 09-19: 100 kW,, 19-22: 75 kW,, 22-06: 75 kW,])" domain="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid.xml" bids="120" runtime="0.0571272" finalOutcome="-" startingAgent="TimeDependentAgentHardliner@204" deadline="60rounds">
+<resultsOfAgent agent="TimeDependentAgentHardliner@204" agentDesc="does not concede" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="agents.TimeDependentAgentHardliner" userUtility="0.0" finalUtility="0.0" discountedUtility="0.0" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner@205" agentDesc="does not concede" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="agents.TimeDependentAgentHardliner" userUtility="0.0" finalUtility="0.0" discountedUtility="0.0" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Tue Mar 29 10:11:54 CAT 2022" timeOfAgreement="0.8524590163934426" lastAction="(Accept  bid:Bid[06-09: 0 kW,, 09-19: 50 kW,, 19-22: 100 kW,, 22-06: 100 kW,])" domain="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid.xml" bids="102" runtime="0.129942" finalOutcome="Bid[06-09: 0 kW,, 09-19: 50 kW,, 19-22: 100 kW,, 22-06: 100 kW,]" startingAgent="CadacDC1@206" deadline="60rounds">
+<resultsOfAgent agent="CadacDC1@206" agentDesc="ANAC2017" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="caduceusdc16.CadacDC1" userUtility="0.8547305847391202" finalUtility="0.8547305847391202" discountedUtility="0.8547305847391202" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1@207" agentDesc="ANAC2017" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="caduceusdc16.CadacDC1" userUtility="0.840060777309536" finalUtility="0.840060777309536" discountedUtility="0.840060777309536" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Tue Mar 29 10:11:54 CAT 2022" timeOfAgreement="0.8524590163934426" lastAction="(Accept  bid:Bid[06-09: 0 kW,, 09-19: 100 kW,, 19-22: 100 kW,, 22-06: 100 kW,])" domain="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid.xml" bids="102" runtime="0.0915885" finalOutcome="Bid[06-09: 0 kW,, 09-19: 100 kW,, 19-22: 100 kW,, 22-06: 100 kW,]" startingAgent="BoaPartyExample@208" deadline="60rounds">
+<resultsOfAgent agent="BoaPartyExample@208" agentDesc="Boa Party Example" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="bilateralexamples.BoaPartyExample" userUtility="0.8370526045249111" finalUtility="0.8370526045249111" discountedUtility="0.8370526045249111" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1@209" agentDesc="ANAC2017" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="caduceusdc16.CadacDC1" userUtility="0.9588259622569032" finalUtility="0.9588259622569032" discountedUtility="0.9588259622569032" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Tue Mar 29 10:11:54 CAT 2022" timeOfAgreement="0.9344262295081968" lastAction="(Accept  bid:Bid[06-09: 100 kW,, 09-19: 0 kW,, 19-22: 100 kW,, 22-06: 100 kW,])" domain="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid.xml" bids="113" runtime="0.103442" finalOutcome="Bid[06-09: 100 kW,, 09-19: 0 kW,, 19-22: 100 kW,, 22-06: 100 kW,]" startingAgent="TimeDependentAgentHardliner@210" deadline="60rounds">
+<resultsOfAgent agent="TimeDependentAgentHardliner@210" agentDesc="does not concede" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="agents.TimeDependentAgentHardliner" userUtility="1.0" finalUtility="1.0" discountedUtility="1.0" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1@211" agentDesc="ANAC2017" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="caduceusdc16.CadacDC1" userUtility="0.45746606432856785" finalUtility="0.45746606432856785" discountedUtility="0.45746606432856785" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Tue Mar 29 10:11:55 CAT 2022" timeOfAgreement="0.8360655737704918" lastAction="(Accept  bid:Bid[06-09: 0 kW,, 09-19: 25 kW,, 19-22: 100 kW,, 22-06: 100 kW,])" domain="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid.xml" bids="100" runtime="0.1723288" finalOutcome="Bid[06-09: 0 kW,, 09-19: 25 kW,, 19-22: 100 kW,, 22-06: 100 kW,]" startingAgent="CadacDC1@212" deadline="60rounds">
+<resultsOfAgent agent="CadacDC1@212" agentDesc="ANAC2017" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="caduceusdc16.CadacDC1" userUtility="0.8900865451675384" finalUtility="0.8900865451675384" discountedUtility="0.8900865451675384" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="BoaPartyExample@213" agentDesc="Boa Party Example" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="bilateralexamples.BoaPartyExample" userUtility="0.681707197379713" finalUtility="0.681707197379713" discountedUtility="0.681707197379713" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Tue Mar 29 10:11:55 CAT 2022" timeOfAgreement="0.7213114754098361" lastAction="(Accept  bid:Bid[06-09: 100 kW,, 09-19: 100 kW,, 19-22: 100 kW,, 22-06: 75 kW,])" domain="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid.xml" bids="87" runtime="0.0919645" finalOutcome="Bid[06-09: 100 kW,, 09-19: 100 kW,, 19-22: 100 kW,, 22-06: 75 kW,]" startingAgent="BoaPartyExample@214" deadline="60rounds">
+<resultsOfAgent agent="BoaPartyExample@214" agentDesc="Boa Party Example" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="bilateralexamples.BoaPartyExample" userUtility="0.8948820169364701" finalUtility="0.8948820169364701" discountedUtility="0.8948820169364701" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="BoaPartyExample@215" agentDesc="Boa Party Example" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="bilateralexamples.BoaPartyExample" userUtility="0.830707153174943" finalUtility="0.830707153174943" discountedUtility="0.830707153174943" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Tue Mar 29 10:11:55 CAT 2022" timeOfAgreement="0.9016393442622951" lastAction="(Accept  bid:Bid[06-09: 100 kW,, 09-19: 0 kW,, 19-22: 100 kW,, 22-06: 100 kW,])" domain="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid.xml" bids="109" runtime="0.0714766" finalOutcome="Bid[06-09: 100 kW,, 09-19: 0 kW,, 19-22: 100 kW,, 22-06: 100 kW,]" startingAgent="TimeDependentAgentHardliner@216" deadline="60rounds">
+<resultsOfAgent agent="TimeDependentAgentHardliner@216" agentDesc="does not concede" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="agents.TimeDependentAgentHardliner" userUtility="1.0" finalUtility="1.0" discountedUtility="1.0" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="BoaPartyExample@217" agentDesc="Boa Party Example" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="bilateralexamples.BoaPartyExample" userUtility="0.45746606432856785" finalUtility="0.45746606432856785" discountedUtility="0.45746606432856785" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Tue Mar 29 10:11:56 CAT 2022" timeOfAgreement="0.9344262295081968" lastAction="(Accept  bid:Bid[06-09: 0 kW,, 09-19: 100 kW,, 19-22: 75 kW,, 22-06: 75 kW,])" domain="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid.xml" bids="112" runtime="0.211667" finalOutcome="Bid[06-09: 0 kW,, 09-19: 100 kW,, 19-22: 75 kW,, 22-06: 75 kW,]" startingAgent="CadacDC1@218" deadline="60rounds">
+<resultsOfAgent agent="CadacDC1@218" agentDesc="ANAC2017" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="caduceusdc16.CadacDC1" userUtility="0.6491176500844633" finalUtility="0.6491176500844633" discountedUtility="0.6491176500844633" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner@219" agentDesc="does not concede" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="agents.TimeDependentAgentHardliner" userUtility="0.9999999999999999" finalUtility="0.9999999999999999" discountedUtility="0.9999999999999999" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Tue Mar 29 10:11:56 CAT 2022" timeOfAgreement="0.9180327868852459" lastAction="(Accept  bid:Bid[06-09: 0 kW,, 09-19: 100 kW,, 19-22: 75 kW,, 22-06: 75 kW,])" domain="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid.xml" bids="110" runtime="0.1381382" finalOutcome="Bid[06-09: 0 kW,, 09-19: 100 kW,, 19-22: 75 kW,, 22-06: 75 kW,]" startingAgent="BoaPartyExample@220" deadline="60rounds">
+<resultsOfAgent agent="BoaPartyExample@220" agentDesc="Boa Party Example" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="bilateralexamples.BoaPartyExample" userUtility="0.6491176500844633" finalUtility="0.6491176500844633" discountedUtility="0.6491176500844633" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner@221" agentDesc="does not concede" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="agents.TimeDependentAgentHardliner" userUtility="0.9999999999999999" finalUtility="0.9999999999999999" discountedUtility="0.9999999999999999" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Tue Mar 29 10:11:56 CAT 2022" lastAction="(Offer  bid:Bid[06-09: 0 kW,, 09-19: 100 kW,, 19-22: 75 kW,, 22-06: 75 kW,])" domain="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid.xml" bids="120" runtime="0.1146014" finalOutcome="-" startingAgent="TimeDependentAgentHardliner@222" deadline="60rounds">
+<resultsOfAgent agent="TimeDependentAgentHardliner@222" agentDesc="does not concede" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="agents.TimeDependentAgentHardliner" userUtility="0.0" finalUtility="0.0" discountedUtility="0.0" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner@223" agentDesc="does not concede" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="agents.TimeDependentAgentHardliner" userUtility="0.0" finalUtility="0.0" discountedUtility="0.0" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Tue Mar 29 10:11:57 CAT 2022" timeOfAgreement="0.8524590163934426" lastAction="(Accept  bid:Bid[06-09: 0 kW,, 09-19: 0 kW,, 19-22: 75 kW,, 22-06: 100 kW,])" domain="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid.xml" bids="102" runtime="0.2767502" finalOutcome="Bid[06-09: 0 kW,, 09-19: 0 kW,, 19-22: 75 kW,, 22-06: 100 kW,]" startingAgent="CadacDC1@224" deadline="60rounds">
+<resultsOfAgent agent="CadacDC1@224" agentDesc="ANAC2017" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="caduceusdc16.CadacDC1" userUtility="0.7542356331479932" finalUtility="0.7542356331479932" discountedUtility="0.7542356331479932" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1@225" agentDesc="ANAC2017" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="caduceusdc16.CadacDC1" userUtility="0.7495400596071685" finalUtility="0.7495400596071685" discountedUtility="0.7495400596071685" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Tue Mar 29 10:11:57 CAT 2022" timeOfAgreement="0.8524590163934426" lastAction="(Accept  bid:Bid[06-09: 0 kW,, 09-19: 0 kW,, 19-22: 100 kW,, 22-06: 50 kW,])" domain="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid.xml" bids="102" runtime="0.1045175" finalOutcome="Bid[06-09: 0 kW,, 09-19: 0 kW,, 19-22: 100 kW,, 22-06: 50 kW,]" startingAgent="BoaPartyExample@226" deadline="60rounds">
+<resultsOfAgent agent="BoaPartyExample@226" agentDesc="Boa Party Example" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="bilateralexamples.BoaPartyExample" userUtility="0.8504210883705916" finalUtility="0.8504210883705916" discountedUtility="0.8504210883705916" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1@227" agentDesc="ANAC2017" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="caduceusdc16.CadacDC1" userUtility="0.750570151374181" finalUtility="0.750570151374181" discountedUtility="0.750570151374181" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Tue Mar 29 10:11:58 CAT 2022" timeOfAgreement="0.9836065573770492" lastAction="(Accept  bid:Bid[06-09: 100 kW,, 09-19: 0 kW,, 19-22: 100 kW,, 22-06: 100 kW,])" domain="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid.xml" bids="119" runtime="0.2242067" finalOutcome="Bid[06-09: 100 kW,, 09-19: 0 kW,, 19-22: 100 kW,, 22-06: 100 kW,]" startingAgent="TimeDependentAgentHardliner@228" deadline="60rounds">
+<resultsOfAgent agent="TimeDependentAgentHardliner@228" agentDesc="does not concede" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="agents.TimeDependentAgentHardliner" userUtility="1.0" finalUtility="1.0" discountedUtility="1.0" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1@229" agentDesc="ANAC2017" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="caduceusdc16.CadacDC1" userUtility="0.43419005395476573" finalUtility="0.43419005395476573" discountedUtility="0.43419005395476573" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Tue Mar 29 10:11:58 CAT 2022" timeOfAgreement="0.8360655737704918" lastAction="(Accept  bid:Bid[06-09: 0 kW,, 09-19: 0 kW,, 19-22: 100 kW,, 22-06: 0 kW,])" domain="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid.xml" bids="100" runtime="0.2124321" finalOutcome="Bid[06-09: 0 kW,, 09-19: 0 kW,, 19-22: 100 kW,, 22-06: 0 kW,]" startingAgent="CadacDC1@230" deadline="60rounds">
+<resultsOfAgent agent="CadacDC1@230" agentDesc="ANAC2017" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="caduceusdc16.CadacDC1" userUtility="0.8160150261638979" finalUtility="0.8160150261638979" discountedUtility="0.8160150261638979" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="BoaPartyExample@231" agentDesc="Boa Party Example" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="bilateralexamples.BoaPartyExample" userUtility="0.7761239643974466" finalUtility="0.7761239643974466" discountedUtility="0.7761239643974466" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Tue Mar 29 10:11:59 CAT 2022" timeOfAgreement="0.8360655737704918" lastAction="(Accept  bid:Bid[06-09: 0 kW,, 09-19: 0 kW,, 19-22: 100 kW,, 22-06: 0 kW,])" domain="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid.xml" bids="100" runtime="0.1349792" finalOutcome="Bid[06-09: 0 kW,, 09-19: 0 kW,, 19-22: 100 kW,, 22-06: 0 kW,]" startingAgent="BoaPartyExample@232" deadline="60rounds">
+<resultsOfAgent agent="BoaPartyExample@232" agentDesc="Boa Party Example" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="bilateralexamples.BoaPartyExample" userUtility="0.8160150261638979" finalUtility="0.8160150261638979" discountedUtility="0.8160150261638979" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="BoaPartyExample@233" agentDesc="Boa Party Example" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="bilateralexamples.BoaPartyExample" userUtility="0.7761239643974466" finalUtility="0.7761239643974466" discountedUtility="0.7761239643974466" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Tue Mar 29 10:11:59 CAT 2022" timeOfAgreement="0.9836065573770492" lastAction="(Accept  bid:Bid[06-09: 100 kW,, 09-19: 0 kW,, 19-22: 100 kW,, 22-06: 100 kW,])" domain="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid.xml" bids="119" runtime="0.0747638" finalOutcome="Bid[06-09: 100 kW,, 09-19: 0 kW,, 19-22: 100 kW,, 22-06: 100 kW,]" startingAgent="TimeDependentAgentHardliner@234" deadline="60rounds">
+<resultsOfAgent agent="TimeDependentAgentHardliner@234" agentDesc="does not concede" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="agents.TimeDependentAgentHardliner" userUtility="1.0" finalUtility="1.0" discountedUtility="1.0" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="BoaPartyExample@235" agentDesc="Boa Party Example" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="bilateralexamples.BoaPartyExample" userUtility="0.43419005395476573" finalUtility="0.43419005395476573" discountedUtility="0.43419005395476573" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Tue Mar 29 10:12:00 CAT 2022" timeOfAgreement="0.9508196721311475" lastAction="(Accept  bid:Bid[06-09: 0 kW,, 09-19: 0 kW,, 19-22: 0 kW,, 22-06: 0 kW,])" domain="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid.xml" bids="115" runtime="0.2071562" finalOutcome="Bid[06-09: 0 kW,, 09-19: 0 kW,, 19-22: 0 kW,, 22-06: 0 kW,]" startingAgent="CadacDC1@236" deadline="60rounds">
+<resultsOfAgent agent="CadacDC1@236" agentDesc="ANAC2017" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="caduceusdc16.CadacDC1" userUtility="0.5058239989977413" finalUtility="0.5058239989977413" discountedUtility="0.5058239989977413" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner@237" agentDesc="does not concede" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="agents.TimeDependentAgentHardliner" userUtility="1.0" finalUtility="1.0" discountedUtility="1.0" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Tue Mar 29 10:12:00 CAT 2022" timeOfAgreement="0.9836065573770492" lastAction="(Accept  bid:Bid[06-09: 0 kW,, 09-19: 0 kW,, 19-22: 0 kW,, 22-06: 0 kW,])" domain="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid.xml" bids="118" runtime="0.1515876" finalOutcome="Bid[06-09: 0 kW,, 09-19: 0 kW,, 19-22: 0 kW,, 22-06: 0 kW,]" startingAgent="BoaPartyExample@238" deadline="60rounds">
+<resultsOfAgent agent="BoaPartyExample@238" agentDesc="Boa Party Example" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="bilateralexamples.BoaPartyExample" userUtility="0.5058239989977413" finalUtility="0.5058239989977413" discountedUtility="0.5058239989977413" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner@239" agentDesc="does not concede" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="agents.TimeDependentAgentHardliner" userUtility="1.0" finalUtility="1.0" discountedUtility="1.0" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Tue Mar 29 10:12:00 CAT 2022" lastAction="(Offer  bid:Bid[06-09: 0 kW,, 09-19: 0 kW,, 19-22: 0 kW,, 22-06: 0 kW,])" domain="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid.xml" bids="120" runtime="0.1322639" finalOutcome="-" startingAgent="TimeDependentAgentHardliner@240" deadline="60rounds">
+<resultsOfAgent agent="TimeDependentAgentHardliner@240" agentDesc="does not concede" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="agents.TimeDependentAgentHardliner" userUtility="0.0" finalUtility="0.0" discountedUtility="0.0" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner@241" agentDesc="does not concede" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="agents.TimeDependentAgentHardliner" userUtility="0.0" finalUtility="0.0" discountedUtility="0.0" discount="1.0" totalUserBother="0.0">
+</resultsOfAgent>
+</NegotiationOutcome></Tournament>

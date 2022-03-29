@@ -1,0 +1,6 @@
+sep=;
+Run time (s);Round;Exception;deadline;Agreement;Discounted;#agreeing;min.util.;max.util.;Dist. to Pareto;Dist. to Nash;Social Welfare;Agent 1;Agent 2;Utility 1;Utility 2;Disc. Util. 1;Disc. Util. 2;Perceived. Util. 1;Perceived. Util. 2;User Bother 1;User Bother 2;User Util. 1;User Util. 2;Profile 1;Profile 2
+0.981;56;;60rounds;Yes;No;2;0.77381;0.84001;0.00000;0.00000;1.61382;CadacDC1@81;CadacDC1@82;0.8400142500258816;0.77380885;0.8400142500258816;0.77380885;0.8400142500258816;0.77380885;0.0;0.0;0.8400142500258816;0.77380885;party2_utility.xml;party4_utility.xml
+0.650;58;;60rounds;Yes;No;2;0.50000;1.00000;0.00000;0.31712;1.50000;TimeDependentAgentHardliner@83;CadacDC1@84;1.0;0.49999960000000004;1.0;0.49999960000000004;0.0;0.49999960000000004;0.0;0.0;1.0;0.49999960000000004;party2_utility.xml;party4_utility.xml
+0.467;58;;60rounds;Yes;No;2;0.44818;1.00000;0.00000;0.45243;1.44818;CadacDC1@85;TimeDependentAgentHardliner@86;0.4481811729268628;0.9999991;0.4481811729268628;0.9999991;0.4481811729268628;0.0;0.0;0.0;0.4481811729268628;0.9999991;party2_utility.xml;party4_utility.xml
+0.063;61;;60rounds;No;No;1;0.00000;0.00000;1.04368;1.14211;0.00000;TimeDependentAgentHardliner@87;TimeDependentAgentHardliner@88;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;party2_utility.xml;party4_utility.xml

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<boaPartiesList>
+    <boaparties partyName="newParty">
+        <properties/>
+        <biddingStrategy>
+            <item classpath="negotiator.boaframework.offeringstrategy.anac2011.ValueModelAgent_Offering"/>
+        </biddingStrategy>
+        <acceptanceStrategy>
+            <item classpath="negotiator.boaframework.acceptanceconditions.anac2011.AC_ValueModelAgent"/>
+        </acceptanceStrategy>
+        <opponentModel>
+            <parameters name="m" value="0.0"/>
+            <item classpath="negotiator.boaframework.opponentmodel.BayesianModel"/>
+        </opponentModel>
+        <omStrategy>
+            <parameters name="t" value="1.1"/>
+            <item classpath="negotiator.boaframework.omstrategy.BestBid"/>
+        </omStrategy>
+    </boaparties>
+    <boaparties partyName="newParty">
+        <properties/>
+        <biddingStrategy>
+            <parameters name="r" value="36.0"/>
+            <parameters name="s" value="100.0"/>
+            <item classpath="negotiator.boaframework.offeringstrategy.IAMHaggler_Test_Offering"/>
+        </biddingStrategy>
+        <acceptanceStrategy>
+            <item classpath="negotiator.boaframework.acceptanceconditions.anac2011.AC_TheNegotiator"/>
+        </acceptanceStrategy>
+        <opponentModel>
+            <item classpath="negotiator.boaframework.opponentmodel.PerfectModel"/>
+        </opponentModel>
+        <omStrategy>
+            <item classpath="negotiator.boaframework.omstrategy.TheFawkes_OMS"/>
+        </omStrategy>
+    </boaparties>
+</boaPartiesList>

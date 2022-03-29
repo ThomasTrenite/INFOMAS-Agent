@@ -1,0 +1,7 @@
+<?xml version="1.0" ?><Session>
+<NegotiationOutcome exception="Failed to execute protocol: Execution failed of CadacDC1@1:java.lang.NullPointerException: bid can not be null: bid can not be null" currentTime="Tue Mar 29 14:18:23 CAT 2022" lastAction="(Offer  bid:Bid[Food: Chips and Nuts, Drinks: Beer Only, Location: Party Room, Invitations: Custom, Handmade, Music: DJ, Cleanup: Specialized Materials])" bids="61" runtime="0.3055652" deadline="60rounds">
+<resultsOfAgent agent="AgentHP" utilspace="etc/templates/partydomain/party1_utility.xml" agentClass="agents.anac.y2015.AgentHP.AgentHP" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/partydomain/party2_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome></Session>

@@ -1,0 +1,36 @@
+<utility_space> 
+<objective name="HolidayPref2" index="0" description="" etype="objective" type="objective"> 
+<issue vtype="discrete" name="Loc" index="1" etype="discrete" type="discrete"> 
+<item evaluation="3.0" index="1" value="A (10)"> 
+</item> 
+<item evaluation="2.0" index="2" value="B (10)"> 
+</item> 
+<item evaluation="10.0" index="3" value="M (10)"> 
+</item> 
+</issue> 
+<issue vtype="discrete" name="Duration" index="2" etype="discrete" type="discrete"> 
+<item evaluation="4.0" index="1" value="1 week (10)"> 
+</item> 
+<item evaluation="10.0" index="2" value="2 weeks (10)"> 
+</item> 
+</issue> 
+<issue vtype="discrete" name="hotelQuality" index="3" etype="discrete" type="discrete"> 
+<item evaluation="3.0" index="1" value="hostel (10)"> 
+</item> 
+<item evaluation="3.0" index="2" value="three star hotel (10)"> 
+</item> 
+<item evaluation="10.0" index="3" value="five star hotel (10)"> 
+</item> 
+</issue> 
+<weight index="1" value="0.5003551490067368"> 
+</weight> 
+<weight index="2" value="0.40338255352149954"> 
+</weight> 
+<weight index="3" value="0.09626229747176362"> 
+</weight> 
+</objective> 
+<discount_factor value="1.0"> 
+</discount_factor> 
+<reservation value="0.0"> 
+</reservation> 
+</utility_space> 

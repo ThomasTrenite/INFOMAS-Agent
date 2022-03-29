@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<agentsStatistics>
+    <statistics>
+        <agentname>caduceusdc16.CadacDC1</agentname>
+        <totalUndiscountedUtility>2.5620038729527446</totalUndiscountedUtility>
+        <totalDiscountedUtility>2.5620038729527446</totalDiscountedUtility>
+        <numberOfSessions>4</numberOfSessions>
+        <totalNashDist>0.7695554435322827</totalNashDist>
+        <totalWelfare>6.1758260729786265</totalWelfare>
+        <totalParetoDistance>0.0</totalParetoDistance>
+        <meanDiscounted>0.6405009682381861</meanDiscounted>
+        <meanNashDistance>0.19238886088307067</meanNashDistance>
+        <meanParetoDistance>0.0</meanParetoDistance>
+        <meanUndiscounted>0.6405009682381861</meanUndiscounted>
+        <meanWelfare>1.5439565182446566</meanWelfare>
+    </statistics>
+    <statistics>
+        <agentname>agents.TimeDependentAgentHardliner</agentname>
+        <totalUndiscountedUtility>1.9999991000000001</totalUndiscountedUtility>
+        <totalDiscountedUtility>1.9999991000000001</totalDiscountedUtility>
+        <numberOfSessions>4</numberOfSessions>
+        <totalNashDist>3.053765658538657</totalNashDist>
+        <totalWelfare>2.948179872926863</totalWelfare>
+        <totalParetoDistance>2.0873510451706765</totalParetoDistance>
+        <meanDiscounted>0.49999977500000004</meanDiscounted>
+        <meanNashDistance>0.7634414146346642</meanNashDistance>
+        <meanParetoDistance>0.5218377612926691</meanParetoDistance>
+        <meanUndiscounted>0.49999977500000004</meanUndiscounted>
+        <meanWelfare>0.7370449682317157</meanWelfare>
+    </statistics>
+</agentsStatistics>
