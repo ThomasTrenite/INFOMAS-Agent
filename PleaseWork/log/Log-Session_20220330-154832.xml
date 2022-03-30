@@ -1,0 +1,7 @@
+<?xml version="1.0" ?><Session>
+<NegotiationOutcome currentTime="Wed Mar 30 15:48:32 CAT 2022" timeOfAgreement="0.13114754098360656" lastAction="(Accept  bid:Bid[Laptop: HP, Harddisk: 80 Gb, External Monitor: 19'' LCD])" domain="etc/templates/anac/y2011/Laptop/laptop_domain.xml" bids="14" runtime="0.0697739" finalOutcome="Bid[Laptop: HP, Harddisk: 80 Gb, External Monitor: 19'' LCD]" startingAgent="Shiboy@0" deadline="60rounds">
+<resultsOfAgent agent="Shiboy@0" agentDesc="ANAC2018" utilspace="etc/templates/anac/y2011/Laptop/laptop_seller_utility.xml" agentClass="agents.anac.y2018.shiboy.Shiboy" userUtility="0.7811034486944924" finalUtility="0.874024298478376" discountedUtility="0.7811034486944924" discount="0.42441038" totalUserBother="0.0">
+</resultsOfAgent>
+<resultsOfAgent agent="CadacDC1@1" agentDesc="TransformerCadac" utilspace="etc/templates/anac/y2011/Laptop/laptop_seller_utility_u10.xml" agentClass="caduceusdc16.CadacDC1" userUtility="0.7809321548353262" finalUtility="0.873832627329898" discountedUtility="0.7809321548353262" discount="0.42441038" totalUserBother="0.0">
+</resultsOfAgent>
+</NegotiationOutcome></Session>

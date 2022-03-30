@@ -1,7 +1,0 @@
-<?xml version="1.0" ?><Session>
-<NegotiationOutcome exception="Failed to execute protocol: Execution failed of CadacDC1@1:java.lang.NullPointerException: null" currentTime="Tue Mar 29 16:16:33 CAT 2022" lastAction="(Offer  bid:Bid[Party: Catering, Food: Handmade Cocktails, Drinks: Party Room, Location: Custom, Printed, Invitations: MP3, Music: Water and Soap])" bids="63" runtime="0.2146499" deadline="60rounds">
-<resultsOfAgent agent="Seto" utilspace="etc/templates/partydomain/party1_utility.xml" agentClass="agents.anac.y2018.seto.Seto" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
-</resultsOfAgent>
-<resultsOfAgent agent="CadacDC1" utilspace="etc/templates/partydomain/party2_utility.xml" agentClass="C:\Users\hen3k\JavaProjects\Test\out\production\Test\caduceusdc16\CadacDC1.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
-</resultsOfAgent>
-</NegotiationOutcome></Session>

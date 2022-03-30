@@ -1,7 +1,0 @@
-<?xml version="1.0" ?><Session>
-<NegotiationOutcome currentTime="Tue Mar 29 16:21:07 CAT 2022" timeOfAgreement="0.9508196721311475" lastAction="(Accept  bid:Bid[Food: Catering, Drinks: Non-Alcoholic, Location: Your Dorm, Invitations: Plain, Music: Band, Cleanup: Hired Help])" domain="etc/templates/partydomain/party_domain.xml" bids="115" runtime="0.3263424" finalOutcome="Bid[Food: Catering, Drinks: Non-Alcoholic, Location: Your Dorm, Invitations: Plain, Music: Band, Cleanup: Hired Help]" startingAgent="BoulwareNegotiationParty@0" deadline="60rounds">
-<resultsOfAgent agent="BoulwareNegotiationParty@0" agentDesc="Time-based agent" utilspace="etc/templates/partydomain/party1_utility.xml" agentClass="negotiator.parties.BoulwareNegotiationParty" userUtility="0.3041934453029695" finalUtility="0.3041934453029695" discountedUtility="0.3041934453029695" discount="1.0" totalUserBother="0.0">
-</resultsOfAgent>
-<resultsOfAgent agent="CadacDC1@1" agentDesc="TransformerCadac" utilspace="etc/templates/partydomain/party3_utility.xml" agentClass="caduceusdc16.CadacDC1" userUtility="0.8234258701672489" finalUtility="0.8234258701672489" discountedUtility="0.8234258701672489" discount="1.0" totalUserBother="0.0">
-</resultsOfAgent>
-</NegotiationOutcome></Session>

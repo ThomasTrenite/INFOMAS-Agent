@@ -1,7 +1,0 @@
-<?xml version="1.0" ?><Session>
-<NegotiationOutcome currentTime="Tue Mar 29 11:53:53 CAT 2022" lastAction="(Offer  bid:Bid[Food: Finger-Food, Drinks: Non-Alcoholic, Location: Party Room, Invitations: Plain, Music: MP3, Cleanup: Special Equiment])" domain="etc/templates/partydomain/party_domain.xml" bids="120" runtime="1.0057962" finalOutcome="-" startingAgent="CadacDC1@0" deadline="60rounds">
-<resultsOfAgent agent="CadacDC1@0" agentDesc="ANAC2017" utilspace="etc/templates/partydomain/party2_utility.xml" agentClass="caduceusdc16.CadacDC1" userUtility="0.0" finalUtility="0.0" discountedUtility="0.0" discount="1.0" totalUserBother="0.0">
-</resultsOfAgent>
-<resultsOfAgent agent="Gangster@1" agentDesc="ANAC2014 compatible with non-linear utility spaces" utilspace="etc/templates/partydomain/party3_utility.xml" agentClass="agents.anac.y2014.Gangster.Gangster" userUtility="0.0" finalUtility="0.0" discountedUtility="0.0" discount="1.0" totalUserBother="0.0">
-</resultsOfAgent>
-</NegotiationOutcome></Session>

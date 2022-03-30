@@ -1,7 +1,0 @@
-<?xml version="1.0" ?><Session>
-<NegotiationOutcome currentTime="Wed Feb 23 17:12:37 CAT 2022" timeOfAgreement="0.3114754098360656" lastAction="(Accept  bid:Bid[Loc: B (10), Duration: 2 weeks (10), hotelQuality: hostel (10)])" domain="etc/templates/HolidayPref2/HolidayPref2.xml" bids="37" runtime="0.0409253" finalOutcome="Bid[Loc: B (10), Duration: 2 weeks (10), hotelQuality: hostel (10)]" startingAgent="BoulwareNegotiationParty@0" deadline="60rounds">
-<resultsOfAgent agent="BoulwareNegotiationParty@0" agentDesc="Time-based agent" utilspace="etc/templates/HolidayPref2/HolidayPref2_util1.xml" agentClass="negotiator.parties.BoulwareNegotiationParty" userUtility="0.9999999999999999" finalUtility="0.9999999999999999" discountedUtility="0.9999999999999999" discount="1.0" totalUserBother="0.0">
-</resultsOfAgent>
-<resultsOfAgent agent="ConcederNegotiationParty@1" agentDesc="Time-based conceder" utilspace="etc/templates/HolidayPref2/HolidayPref2_util2.xml" agentClass="negotiator.parties.ConcederNegotiationParty" userUtility="0.532332272564376" finalUtility="0.532332272564376" discountedUtility="0.532332272564376" discount="1.0" totalUserBother="0.0">
-</resultsOfAgent>
-</NegotiationOutcome></Session>
