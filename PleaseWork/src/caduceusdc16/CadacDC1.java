@@ -6,17 +6,9 @@
 //package agents.anac.y2017.caduceusdc16;
 package caduceusdc16;
 
-import agents.anac.y2016.atlas3.Atlas32016;
-import agents.anac.y2016.caduceus.agents.Atlas3.Atlas3;
+import agents.anac.y2011.AgentK2.Agent_K2;
 import agents.anac.y2016.caduceus.agents.Caduceus.UtilFunctions;
-import agents.anac.y2016.caduceus.agents.RandomDance.RandomDance;
-import agents.anac.y2016.caduceus.agents.kawaii.kawaii;
-import agents.anac.y2016.farma.Farma;
-import agents.anac.y2016.grandma.GrandmaAgent;
-import agents.anac.y2016.myagent.MyAgent;
-import agents.anac.y2016.parscat.ParsCat;
-import agents.anac.y2016.yxagent.YXAgent;
-import bilateralexamples.BoaPartyExample;
+import agents.anac.y2019.agentgg.AgentGG;
 import genius.core.AgentID;
 import genius.core.Bid;
 import genius.core.actions.Accept;
@@ -31,14 +23,9 @@ import genius.core.parties.NegotiationParty;
 import genius.core.persistent.StandardInfo;
 import genius.core.persistent.StandardInfoList;
 import genius.core.utility.AbstractUtilitySpace;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Random;
-import java.util.Map.Entry;
 
-import static java.util.Objects.isNull;
+import java.util.*;
+import java.util.Map.Entry;
 
 public class CadacDC1 extends AbstractNegotiationParty {
 	public double discountFactor = 0.0D;
@@ -64,12 +51,13 @@ public class CadacDC1 extends AbstractNegotiationParty {
 	public void init(NegotiationInfo var1) {
 		super.init(var1);
 		this.random = new Random(var1.getRandomSeed());
-		this.agents[0] = new YXAgent();
+		this.agents[0] = new Agent_K2();		// This agent is not decoupled. I thought it would be interesting to leave him in.
 		//this.agents[0] = new BoaPartyExample();
-		this.agents[1] = new RandomDance();
-		this.agents[2] = new kawaii();
-		this.agents[3] = new Atlas3();
-		this.agents[4] = new GrandmaAgent();
+		this.agents[1] = new NegotiatiorReloaded();
+		this.agents[2] = new OMACagent();
+		this.agents[3] = new Gahboninho();
+		this.agents[4] = new InoxAgent();
+
 		this.uspace = this.getUtilitySpace();
 		this.discountFactor = this.getUtilitySpace().getDiscountFactor();
 		double var2 = this.getUtilitySpace().getReservationValueUndiscounted();
