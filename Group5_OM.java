@@ -228,16 +228,16 @@ public class Group5_OM extends OpponentModel {
                 i++;
 
             }
-            double merge =0;
+            float merge =0;
             double distance =0;
-            double common =0;
+            float common =0;
             for(i=0;i<ob.length;i++){
                 if(ob[i]==ex[i])
                     common++;
                 else distance = distance + Math.abs(ob[i]-ex[i]);
             }
             merge = ob.length+ex.length-common;
-            float jaccard_distance = (float)distance/ob.length;
+            float jaccard_distance = 1-common/merge;
 
             System.out.println(jaccard_distance);
             if(jaccard_distance>THRESHOLD){
