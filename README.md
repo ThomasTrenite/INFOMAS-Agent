@@ -10,6 +10,8 @@ Creating the best negotiation agent for INFOMAS Course.
 
 If you get an error make sure the project has access to genius and the other folders (i.e. bilateralexample)
 
+!!! Remember to set `Data persistency = Standard` in the GUI!!!
+
 If you absolutely must run it and don't have time to sort out compilation bug, Copy the .class file in `out/Production/PleaseWork/Caduceusdc16/` and place it into your `out` file
 
 

@@ -48,6 +48,7 @@ public class CadacDC1 extends AbstractNegotiationParty {
 	private Bid lastReceivedBid = null;
 	private AbstractUtilitySpace uspace = null;
 	public NegotiationParty[] agents = new NegotiationParty[5];
+	public int bidnumber = 0;
 	/*
 	* scores: the weights of each of the agents
 	* */
@@ -78,8 +79,6 @@ public class CadacDC1 extends AbstractNegotiationParty {
 		StandardInfoList var4 = (StandardInfoList)this.getData().get();
 		System.out.println("(StandardInfoList1) " + var4.isEmpty());
 
-
-
 		if (!var4.isEmpty()) {
 			double var5 = 0.0D;
 			Iterator var7 = var4.iterator();
@@ -94,7 +93,7 @@ public class CadacDC1 extends AbstractNegotiationParty {
 
 				while(var13.hasNext()) {
 					Tuple var14 = (Tuple)var13.next();
-					if (((String)var14.get1()).toLowerCase().contains("CaduceusDC16".toLowerCase())) {
+					if (((String)var14.get1()).toLowerCase().contains("Transformer".toLowerCase())) {
 						var5 += (Double)var14.get2();
 					}
 				}
@@ -112,17 +111,7 @@ public class CadacDC1 extends AbstractNegotiationParty {
 			agent.init(var1);
 		}
 
-
-//		NegotiationParty[] var15 = this.agents;
-//		int var6 = var15.length;
-//
-//		for(int var16 = 0; var16 < var6; ++var16) {
-//			NegotiationParty var17 = var15[var16];
-//			var17.init(var1);
-//		}
-
 	}
-
 
 	public Action chooseAction(List<Class<? extends Action>> var1) {
 
@@ -136,7 +125,6 @@ public class CadacDC1 extends AbstractNegotiationParty {
 			System.err.println("Best Bid is null?");
 		}
 
-
 		//Get a reaction (Accept or make new offer) from each agent.
 
 		/**
@@ -145,7 +133,6 @@ public class CadacDC1 extends AbstractNegotiationParty {
 		 */
 
 		ArrayList agentActions = new ArrayList();
-
 		NegotiationParty[] agentArray = this.agents;
 
 		for(int i = 0; i < agentArray.length; ++i) {
@@ -154,10 +141,7 @@ public class CadacDC1 extends AbstractNegotiationParty {
 			agentActions.add(action);
 		}
 
-
-
 		// here the agents vote whether to accept the bid or propose a new one.
-
 
 		/**
 		 *  agentBids - List of bids of expert agents that did not accept opponents bid
@@ -183,7 +167,10 @@ public class CadacDC1 extends AbstractNegotiationParty {
 		if (acceptCounter > makeNewOfferCounter && this.uspace.getUtility(this.lastReceivedBid) >= this.selfReservationValue) {
 			return new Accept(this.getPartyId(), this.lastReceivedBid);
 		} else if (makeNewOfferCounter > acceptCounter) {
-			return new Offer(this.getPartyId(), this.getMostProposedBidWithWeight(agentsThatBid, agentBids));
+
+			Bid bid = this.getMostProposedBidWithWeight(agentsThatBid, agentBids);
+			Offer offer = new Offer(this.getPartyId(), bid);
+			return offer;
 		} else {
 			return new Offer(this.getPartyId(), this.getBestBid());
 		}
@@ -236,7 +223,7 @@ public class CadacDC1 extends AbstractNegotiationParty {
 	}
 
 	public String getDescription() {
-		return "TransformerCadac";
+		return "Transformer";
 	}
 
 	private Bid getBestBid() {
@@ -252,7 +239,6 @@ public class CadacDC1 extends AbstractNegotiationParty {
 		return this.getTimeLine().getCurrentTime() < this.getTimeLine().getTotalTime() * this.percentageOfOfferingBestBid;
 	}
 
-
 	/**
 	 *
 	 * @param agentNumbers
@@ -263,11 +249,10 @@ public class CadacDC1 extends AbstractNegotiationParty {
 
 		try {
 			List issues = agentBids.get(0).getIssues();
-			System.out.println("issues = " + issues);
+			//System.out.println("issues = " + issues);
 			HashMap bidP = new HashMap();
 
 			label46:
-//			for(int issue = 1; issue <= issues.size(); ++issue) {
 			for(int issue = 0; issue < issues.size(); issue++) {
 
 				HashMap valuesForIssue = new HashMap();
@@ -277,7 +262,6 @@ public class CadacDC1 extends AbstractNegotiationParty {
 					Issue i = (Issue) issues.get(issue);
 					Value valueOfIssueOfAgent = agentBids.get(agent).getValue(i);
 					Double accumulatedWeightOfValue = (Double)valuesForIssue.get(valueOfIssueOfAgent); //accumulatedWeightOfValueForIssue
-					System.out.println("accumulatedWeightOfValue = " + accumulatedWeightOfValue);
 
 					if (accumulatedWeightOfValue == null) {
 						accumulatedWeightOfValue = 1 +  this.scores[agentNumbers.get(agent)];
@@ -287,22 +271,18 @@ public class CadacDC1 extends AbstractNegotiationParty {
 					}
 					valuesForIssue.put(valueOfIssueOfAgent, accumulatedWeightOfValue);
 
-//					valuesForIssue.put(valueOfIssueOfAgent, accumulatedWeightOfValue == null ? 1.0D : accumulatedWeightOfValue + this.scores[agentNumbers.get(agent)]);
-
 				}
 
 				Entry var12 = null;
 				Iterator var13 = valuesForIssue.entrySet().iterator();
 
-
-
-
 // we need to change this method to instead of taking the max it creates a distribution and samples from the distribution
+
 				while(true) {
 					Entry var14;
 					do {
 						if (!var13.hasNext()) {
-							bidP.put(issue, var12.getKey());
+							bidP.put(issue+1, var12.getKey());
 							continue label46;
 						}
 
@@ -313,7 +293,8 @@ public class CadacDC1 extends AbstractNegotiationParty {
 				}
 			}
 
-			return new Bid(this.utilitySpace.getDomain(), bidP);
+			Bid bid = new Bid(this.utilitySpace.getDomain(), bidP);
+			return bid;
 		} catch (Exception e) {
 			e.printStackTrace();
 			return null;
