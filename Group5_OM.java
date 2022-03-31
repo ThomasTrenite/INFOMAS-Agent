@@ -1,3 +1,4 @@
+package caduceusdc16.boacomponents;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -32,7 +33,8 @@ import org.apache.commons.math3.stat.inference.ChiSquareTest;
 
 public class Group5_OM extends OpponentModel {
 
-    protected int verbose = 1;
+    protected int verbose = 0;
+    protected boolean debug = false;
 
     // Global frequency model
     protected Hashtable<String, Object> freqModel;
@@ -208,10 +210,12 @@ public class Group5_OM extends OpponentModel {
             Hashtable<String, Double> win2Values = win2Dic.get(issue);
 
             Set<String> values_win1 = win1Values.keySet();
-            System.out.println("----------------------------------------------------------------7");
-            System.out.println(win1Values);
-            System.out.println(win2Values);
-            System.out.println("----------------------------------------------------------------7");
+            if (debug) {
+                System.out.println("----------------------------------------------------------------7");
+                System.out.println(win1Values);
+                System.out.println(win2Values);
+                System.out.println("----------------------------------------------------------------7");
+            }
             double[] ob = new double[values_win1.size()];
             double[] ex = new double[values_win1.size()];
             int i =0;
@@ -239,7 +243,8 @@ public class Group5_OM extends OpponentModel {
             merge = ob.length+ex.length-common;
             float jaccard_distance = 1-common/merge;
 
-            System.out.println(jaccard_distance);
+            if (debug)  System.out.println(jaccard_distance);
+
             if(jaccard_distance>THRESHOLD){
                 concealed.put(issue, true);
             }
@@ -298,7 +303,7 @@ public class Group5_OM extends OpponentModel {
             win2.add(bid);
         }
 
-        System.out.printf("Round %.0f weights: %s", negotiationSession.getTimeline().getCurrentTime(), printWeights());
+        if (debug)  System.out.printf("Round %.0f weights: %s", negotiationSession.getTimeline().getCurrentTime(), printWeights());
     }
 
 
@@ -338,8 +343,10 @@ public class Group5_OM extends OpponentModel {
             double issueScore = issueWeight.get(name) * valueFreq;
             utility += issueScore;
 
-            System.out.println("------ui--------");
-            System.out.println(utility);
+            if (debug) {
+                System.out.println("------ui--------");
+                System.out.println(utility);
+            }
 
 
         } // end of issues For
@@ -484,9 +491,11 @@ public class Group5_OM extends OpponentModel {
 
 
     protected double getDelta(double alpha, double beta) {
-        System.out.println("--------time----------");
-        System.out.println(negotiationSession.getTime());
-        return alpha * (1 - Math.pow(negotiationSession.getTime(), beta));
+        if (debug) {
+            System.out.println("--------time----------");
+            System.out.println(negotiationSession.getTime());
+        }
+            return alpha * (1 - Math.pow(negotiationSession.getTime(), beta));
     }
 
     /**

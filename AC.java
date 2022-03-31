@@ -1,3 +1,4 @@
+package caduceusdc16.boacomponents;
 
 import genius.core.Bid;
 import genius.core.boaframework.AcceptanceStrategy;
@@ -18,18 +19,18 @@ public class AC extends AcceptanceStrategy {
 
     public AC() {
     }
-
+    @Override
     public Actions determineAcceptability() {
         receivedBid = negotiationSession.getOpponentBidHistory().getLastBid();
         lastOwnBid = negotiationSession.getOwnBidHistory().getLastBid();
-        UserModel user_model  = this.negotiationSession.getUserModel();
+        UserModel user_model = this.negotiationSession.getUserModel();
         double time = negotiationSession.getTime();
 
 
         if (receivedBid == null || lastOwnBid == null) {
             return Actions.Reject;
-        }
-        if (time < 0.15D) {
+
+        } if (time < 0.15D) {
             double alpha = 1.0D;
             double beta = 0.005D;
             double receivedUtil2 = negotiationSession.getUtilitySpace().getUtility(receivedBid);
@@ -38,22 +39,30 @@ public class AC extends AcceptanceStrategy {
             if (alpha * receivedUtil2 + beta >= UtilToSend2) {
                 return Actions.Accept;
             } else return Actions.Reject;
-        }
-        else if(time >= 0.15D ){
+
+        } else {
             double receivedUtil = negotiationSession.getUtilitySpace().getUtility(receivedBid);
             double targetUtil = negotiationSession.getUtilitySpace().getUtility((lastOwnBid));
-            double new_targetUtil = 0.7D * (1D- (time-0.15)*(time-0.15)*(time-0.15))+ 0.3D;
-            if(receivedUtil >= new_targetUtil){
+            double new_targetUtil = 0.7D * (1D - (time - 0.15) * (time - 0.15) * (time - 0.15)) + 0.3D;
+
+            if (receivedUtil >= new_targetUtil) {
                 return Actions.Accept;
-        }
-            else{
+            } else {
                 return Actions.Reject;
             }
 
-
-
+        }
 
     }
+
+    @Override
+    public String getName() {
+        return "TransformerAcceptanceStrategy";
+    }
+
+
+
+}
 
 
 
