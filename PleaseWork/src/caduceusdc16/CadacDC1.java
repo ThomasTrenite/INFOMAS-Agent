@@ -53,6 +53,7 @@ public class CadacDC1 extends AbstractNegotiationParty {
 		this.random = new Random(var1.getRandomSeed());
 		this.agents[0] = new Agent_K2();		// This agent is not decoupled. I thought it would be interesting to leave him in.
 		//this.agents[0] = new BoaPartyExample();
+
 		this.agents[1] = new NegotiatiorReloaded();
 		this.agents[2] = new OMACagent();
 		this.agents[3] = new Gahboninho();
