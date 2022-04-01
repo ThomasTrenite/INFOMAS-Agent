@@ -1,14 +1,7 @@
-//
-// Source code recreated from a .class file by IntelliJ IDEA
-// (powered by FernFlower decompiler)
-//
 
-//package agents.anac.y2017.caduceusdc16;
 package caduceusdc16;
 
-import agents.anac.y2011.AgentK2.Agent_K2;
 import agents.anac.y2016.caduceus.agents.Caduceus.UtilFunctions;
-import agents.anac.y2019.agentgg.AgentGG;
 import genius.core.AgentID;
 import genius.core.Bid;
 import genius.core.actions.Accept;
@@ -51,9 +44,7 @@ public class CadacDC1 extends AbstractNegotiationParty {
 	public void init(NegotiationInfo var1) {
 		super.init(var1);
 		this.random = new Random(var1.getRandomSeed());
-		this.agents[0] = new Agent_K2();		// This agent is not decoupled. I thought it would be interesting to leave him in.
-		//this.agents[0] = new BoaPartyExample();
-
+		this.agents[0] = new AgentK();
 		this.agents[1] = new NegotiatiorReloaded();
 		this.agents[2] = new OMACagent();
 		this.agents[3] = new Gahboninho();
@@ -110,15 +101,10 @@ public class CadacDC1 extends AbstractNegotiationParty {
 			if (bestBid != null) {
 				return new Offer(this.getPartyId(), bestBid);
 			}
-
 			System.err.println("Best Bid is null?");
 		}
-
-		//Get a reaction (Accept or make new offer) from each agent.
-
 		/**
 		 * agentActions - List of the reactions (accept or offer) of our expert agents to the opponents bid
-		 *
 		 */
 
 		ArrayList agentActions = new ArrayList();
@@ -165,35 +151,38 @@ public class CadacDC1 extends AbstractNegotiationParty {
 		}
 	}
 
-	private Bid getRandomizedAction(ArrayList<Integer> var1, ArrayList<Bid> var2) {
-		double[] var3 = new double[var1.size()];
-		int var4 = 0;
 
-		for(Iterator var5 = var1.iterator(); var5.hasNext(); ++var4) {
-			Integer var6 = (Integer)var5.next();
-			var3[var4] = this.getScore(var6);
-		}
 
-		var3 = UtilFunctions.normalize(var3);
-		UtilFunctions.print(var3);
-		double var14 = this.random.nextDouble();
-		double var7 = 0.0D;
-		var4 = 0;
-		double[] var9 = var3;
-		int var10 = var3.length;
 
-		for(int var11 = 0; var11 < var10; ++var11) {
-			double var12 = var9[var11];
-			var7 += var12;
-			if (var14 < var7) {
-				return (Bid)var2.get(var4);
-			}
-
-			++var4;
-		}
-
-		return null;
-	}
+//	private Bid getRandomizedAction(ArrayList<Integer> var1, ArrayList<Bid> var2) {
+//		double[] var3 = new double[var1.size()];
+//		int var4 = 0;
+//
+//		for(Iterator var5 = var1.iterator(); var5.hasNext(); ++var4) {
+//			Integer var6 = (Integer)var5.next();
+//			var3[var4] = this.getScore(var6);
+//		}
+//
+//		var3 = UtilFunctions.normalize(var3);
+//		UtilFunctions.print(var3);
+//		double var14 = this.random.nextDouble();
+//		double var7 = 0.0D;
+//		var4 = 0;
+//		double[] var9 = var3;
+//		int var10 = var3.length;
+//
+//		for(int var11 = 0; var11 < var10; ++var11) {
+//			double var12 = var9[var11];
+//			var7 += var12;
+//			if (var14 < var7) {
+//				return (Bid)var2.get(var4);
+//			}
+//
+//			++var4;
+//		}
+//
+//		return null;
+//	}
 
 	public void receiveMessage(AgentID var1, Action var2) {
 		super.receiveMessage(var1, var2);
