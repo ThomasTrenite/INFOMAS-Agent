@@ -23,27 +23,27 @@ import java.util.Map.Entry;
 public class CadacDC1 extends AbstractNegotiationParty {
 	public double discountFactor = 0.0D;
 	private double selfReservationValue = 0.75D;
-	private double percentageOfOfferingBestBid = 0.5D;
-	private Random random;
+	private double percentageOfOfferingBestBid = 0.1D;
+	private double sigma = 0.95;
+	private boolean debug = false;
 	private Bid lastReceivedBid = null;
 	private AbstractUtilitySpace uspace = null;
 	public NegotiationParty[] agents = new NegotiationParty[5];
-	public int bidnumber = 0;
 	/*
-	* scores: the weights of each of the agents
+	* weights: the weights of each agent. They are initialized according to the experiments we conducted
 	* */
-	public double[] scores = UtilFunctions.normalize(new double[]{5.0D, 4.0D, 3.0D, 2.0D, 1.0D});
+	public double[] weights = new double[]{0.205, 0.2, 0.198, 0.204, 0.193};
 
 	public CadacDC1() {
 	}
 
 	public double getScore(int var1) {
-		return this.scores[var1];
+		return this.weights[var1];
 	}
 
 	public void init(NegotiationInfo var1) {
 		super.init(var1);
-		this.random = new Random(var1.getRandomSeed());
+		Random random = new Random(var1.getRandomSeed());
 		this.agents[0] = new AgentK();
 		this.agents[1] = new NegotiatiorReloaded();
 		this.agents[2] = new OMACagent();
@@ -93,6 +93,26 @@ public class CadacDC1 extends AbstractNegotiationParty {
 
 	}
 
+	//TODO
+	public Action chooseActionSameAcceptance(List<Class<? extends Action>> var1) {
+		Action action = this.agents[0].chooseAction(var1);
+		if (action instanceof Accept) { //&& this.uspace.getUtility(this.lastReceivedBid) >= this.selfReservationValue) {
+			return new Accept(this.getPartyId(), this.lastReceivedBid);
+
+		} else if (action instanceof Offer) {
+
+			ArrayList agentBids = new ArrayList();
+			for (NegotiationParty agent: this.agents) {
+				agent.chooseAction(var1);
+				agentBids.add(((Offer)action).getBid());
+			}
+
+			Bid bid = this.getMostProposedBidWithWeight(null, agentBids);
+			Offer offer = new Offer(this.getPartyId(), bid);
+		}
+		return null;
+	}
+
 	public Action chooseAction(List<Class<? extends Action>> var1) {
 
 		//First check whether enough time has elapsed before we concede.
@@ -103,9 +123,8 @@ public class CadacDC1 extends AbstractNegotiationParty {
 			}
 			System.err.println("Best Bid is null?");
 		}
-		/**
-		 * agentActions - List of the reactions (accept or offer) of our expert agents to the opponents bid
-		 */
+
+		//chooseActionSameAcceptance()
 
 		ArrayList agentActions = new ArrayList();
 		NegotiationParty[] agentArray = this.agents;
@@ -118,15 +137,12 @@ public class CadacDC1 extends AbstractNegotiationParty {
 
 		// here the agents vote whether to accept the bid or propose a new one.
 
-		/**
-		 *  agentBids - List of bids of expert agents that did not accept opponents bid
-		 *  agentsThatBid - Lis of the corresponding number of the agent that placed a bid.
-		 */
-		double acceptCounter = 0.0D; // acceptCounter
-		double makeNewOfferCounter = 0.0D;	// makeNewOfferCounter
+		double acceptCounter = 0.0D;
+		double makeNewOfferCounter = 0.0D;
 		ArrayList agentBids = new ArrayList();
 		ArrayList agentsThatBid = new ArrayList();
 		int agentNumber = 0;
+
 
 		for(Iterator agentActionIter = agentActions.iterator(); agentActionIter.hasNext(); ++agentNumber) {
 			Action action = (Action)agentActionIter.next();
@@ -150,39 +166,6 @@ public class CadacDC1 extends AbstractNegotiationParty {
 			return new Offer(this.getPartyId(), this.getBestBid());
 		}
 	}
-
-
-
-
-//	private Bid getRandomizedAction(ArrayList<Integer> var1, ArrayList<Bid> var2) {
-//		double[] var3 = new double[var1.size()];
-//		int var4 = 0;
-//
-//		for(Iterator var5 = var1.iterator(); var5.hasNext(); ++var4) {
-//			Integer var6 = (Integer)var5.next();
-//			var3[var4] = this.getScore(var6);
-//		}
-//
-//		var3 = UtilFunctions.normalize(var3);
-//		UtilFunctions.print(var3);
-//		double var14 = this.random.nextDouble();
-//		double var7 = 0.0D;
-//		var4 = 0;
-//		double[] var9 = var3;
-//		int var10 = var3.length;
-//
-//		for(int var11 = 0; var11 < var10; ++var11) {
-//			double var12 = var9[var11];
-//			var7 += var12;
-//			if (var14 < var7) {
-//				return (Bid)var2.get(var4);
-//			}
-//
-//			++var4;
-//		}
-//
-//		return null;
-//	}
 
 	public void receiveMessage(AgentID var1, Action var2) {
 		super.receiveMessage(var1, var2);
@@ -217,15 +200,46 @@ public class CadacDC1 extends AbstractNegotiationParty {
 		return this.getTimeLine().getCurrentTime() < this.getTimeLine().getTotalTime() * this.percentageOfOfferingBestBid;
 	}
 
-	/**
-	 *
-	 * @param agentNumbers
-	 * @param agentBids
-	 * @return
-	 */
+
+	private void updateWeights(ArrayList<Bid> agentBids) {
+
+		if (debug) {
+			for (double d : this.weights) {
+				System.out.println("weights before update = " + d);
+			}
+		}
+
+		double[] weightUpdates = new double[this.weights.length];
+		double time = this.getTimeLine().getCurrentTime();
+
+		if (debug) System.out.println("time = " + time);
+
+		for (int bidnumber = 0; bidnumber < agentBids.size(); bidnumber++) {
+			weightUpdates[bidnumber] = this.uspace.getUtility(agentBids.get(bidnumber));
+
+			if (debug) System.out.println("weightUpdates = " + weightUpdates[bidnumber]);
+		}
+
+		for (int d = 0; d < this.weights.length; d++) {
+			this.weights[d] = this.weights[d] * (1 - Math.pow(this.sigma, time)) + weightUpdates[d] * Math.pow(this.sigma, time);
+		}
+
+		this.weights = UtilFunctions.normalize(this.weights);
+
+		if (debug) {
+			for (double d: this.weights) {
+				System.out.println("Updated weights after normalizing = " + d);
+			}
+		}
+
+	}
+
 	private Bid getMostProposedBidWithWeight(ArrayList<Integer> agentNumbers, ArrayList<Bid> agentBids) {
 
 		try {
+			this.updateWeights(agentBids);
+
+
 			List issues = agentBids.get(0).getIssues();
 			//System.out.println("issues = " + issues);
 			HashMap bidP = new HashMap();
@@ -242,11 +256,9 @@ public class CadacDC1 extends AbstractNegotiationParty {
 					Double accumulatedWeightOfValue = (Double)valuesForIssue.get(valueOfIssueOfAgent); //accumulatedWeightOfValueForIssue
 
 					if (accumulatedWeightOfValue == null) {
-						accumulatedWeightOfValue = 1 +  this.scores[agentNumbers.get(agent)];
-
-					} else {
-						accumulatedWeightOfValue = accumulatedWeightOfValue + this.scores[agentNumbers.get(agent)];
+						accumulatedWeightOfValue = 1.0;
 					}
+					accumulatedWeightOfValue = accumulatedWeightOfValue + this.weights[agentNumbers.get(agent)];
 					valuesForIssue.put(valueOfIssueOfAgent, accumulatedWeightOfValue);
 
 				}
