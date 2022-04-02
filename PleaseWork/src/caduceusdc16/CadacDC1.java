@@ -47,8 +47,8 @@ public class CadacDC1 extends AbstractNegotiationParty {
 		this.agents[0] = new AgentK();
 		this.agents[1] = new NegotiatiorReloaded();
 		this.agents[2] = new OMACagent();
-		this.agents[3] = new Gahboninho();
-		this.agents[4] = new InoxAgent();
+		this.agents[3] = new Yushu();
+		this.agents[4] = new BRAM();
 
 		this.uspace = this.getUtilitySpace();
 		this.discountFactor = this.getUtilitySpace().getDiscountFactor();

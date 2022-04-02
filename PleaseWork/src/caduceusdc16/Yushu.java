@@ -2,29 +2,30 @@ package caduceusdc16;
 
 import caduceusdc16.boacomponents.AC;
 import caduceusdc16.boacomponents.Group5_OM;
+import caduceusdc16.boacomponents.TimeDependent_Offering;
 import caduceusdc16.boacomponents.oms;
 import genius.core.boaframework.*;
 import genius.core.parties.NegotiationInfo;
-import negotiator.boaframework.offeringstrategy.anac2013.Fawkes_Offering;
-import negotiator.boaframework.offeringstrategy.anac2013.InoxAgent_Offering;
+import negotiator.boaframework.offeringstrategy.anac2010.Yushu_Offering;
+import negotiator.boaframework.offeringstrategy.anac2011.Gahboninho_Offering;
 
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
 @SuppressWarnings("serial")
-public class InoxAgent extends BoaParty
+public class Yushu extends BoaParty
 {
     @Override
     public void init(NegotiationInfo info)
     {
         // The choice for each component is made here
-        AcceptanceStrategy 	ac  = new AC();
-        OfferingStrategy 	os  = new InoxAgent_Offering();
-        OpponentModel 		om  = new Group5_OM();
-        OMStrategy			oms = new oms();
+        AcceptanceStrategy ac  = new AC();
+        OfferingStrategy os  = new Yushu_Offering();
+        OpponentModel om  = new Group5_OM();
+        OMStrategy oms = new oms();
 
-        System.out.println("InoxAgent Transformer being run!");
+        System.out.println("Yushu being run!");
 
         // All component parameters can be set below.
         Map<String, Double> noparams = Collections.emptyMap();
@@ -43,7 +44,7 @@ public class InoxAgent extends BoaParty
     @Override
     public String getDescription()
     {
-        return "InoxAgent with enhanced transformer opponent model and acceptance strategy";
+        return "Yushu transformer";
     }
 
     // All the rest of the agent functionality is defined by the components selected above, using the BOA framework
