@@ -9,13 +9,11 @@ import genius.core.actions.Action;
 import genius.core.actions.Offer;
 import genius.core.issue.Issue;
 import genius.core.issue.Value;
-import genius.core.list.Tuple;
 import genius.core.parties.AbstractNegotiationParty;
 import genius.core.parties.NegotiationInfo;
 import genius.core.parties.NegotiationParty;
-import genius.core.persistent.StandardInfo;
-import genius.core.persistent.StandardInfoList;
 import genius.core.utility.AbstractUtilitySpace;
+import  caduceusdc16.boacomponents.Group5_OM;
 
 import java.util.*;
 import java.util.Map.Entry;
@@ -37,13 +35,13 @@ public class CadacDC1 extends AbstractNegotiationParty {
 	public CadacDC1() {
 	}
 
-	public double getScore(int var1) {
-		return this.weights[var1];
+	public double getWeight(int agentNumber) {
+		return this.weights[agentNumber];
 	}
 
-	public void init(NegotiationInfo var1) {
-		super.init(var1);
-		Random random = new Random(var1.getRandomSeed());
+	public void init(NegotiationInfo negotiationInfo) {
+		super.init(negotiationInfo);
+		//Random random = new Random(negotiationInfo.getRandomSeed());
 		this.agents[0] = new AgentK();
 		this.agents[1] = new NegotiatiorReloaded();
 		this.agents[2] = new OMACagent();
@@ -52,43 +50,12 @@ public class CadacDC1 extends AbstractNegotiationParty {
 
 		this.uspace = this.getUtilitySpace();
 		this.discountFactor = this.getUtilitySpace().getDiscountFactor();
-		double var2 = this.getUtilitySpace().getReservationValueUndiscounted();
-		System.out.println("Discount Factor is " + this.discountFactor);
-		System.out.println("Reservation Value is " + var2);
 		this.percentageOfOfferingBestBid *= this.discountFactor;
-		StandardInfoList var4 = (StandardInfoList)this.getData().get();
-		System.out.println("(StandardInfoList1) " + var4.isEmpty());
 
-		if (!var4.isEmpty()) {
-			double var5 = 0.0D;
-			Iterator var7 = var4.iterator();
-
-			while(var7.hasNext()) {
-				StandardInfo var8 = (StandardInfo)var7.next();
-				int var9 = var8.getAgentProfiles().size();
-				List var10 = var8.getUtilities();
-				int var11 = var10.size();
-				List var12 = var10.subList(var11 - var9, var11);
-				Iterator var13 = var12.iterator();
-
-				while(var13.hasNext()) {
-					Tuple var14 = (Tuple)var13.next();
-					if (((String)var14.get1()).toLowerCase().contains("Transformer".toLowerCase())) {
-						var5 += (Double)var14.get2();
-					}
-				}
-			}
-
-			double origSelfReservationValue = this.selfReservationValue;
-			this.selfReservationValue = var5 / (double)var4.size();
-
-			System.out.println(this.selfReservationValue);
-			System.out.println("origSelfReservationValue: "+origSelfReservationValue);
-		}
 
 		for(int i = 0; i < this.agents.length; ++i) {
 			NegotiationParty agent = this.agents[i];
-			agent.init(var1);
+			agent.init(negotiationInfo);
 		}
 
 	}
@@ -147,9 +114,9 @@ public class CadacDC1 extends AbstractNegotiationParty {
 		for(Iterator agentActionIter = agentActions.iterator(); agentActionIter.hasNext(); ++agentNumber) {
 			Action action = (Action)agentActionIter.next();
 			if (action instanceof Accept) {
-				acceptCounter += this.getScore(agentNumber);
+				acceptCounter += this.getWeight(agentNumber);
 			} else if (action instanceof Offer) {
-				makeNewOfferCounter += this.getScore(agentNumber);
+				makeNewOfferCounter += this.getWeight(agentNumber);
 				agentBids.add(((Offer)action).getBid());
 				agentsThatBid.add(agentNumber);
 			}
@@ -180,7 +147,6 @@ public class CadacDC1 extends AbstractNegotiationParty {
 			NegotiationParty var6 = var3[var5];
 			var6.receiveMessage(var1, var2);
 		}
-
 	}
 
 	public String getDescription() {
@@ -215,6 +181,7 @@ public class CadacDC1 extends AbstractNegotiationParty {
 		if (debug) System.out.println("time = " + time);
 
 		for (int bidnumber = 0; bidnumber < agentBids.size(); bidnumber++) {
+			//opponentUtility = Group5_OM.getOpponentUtility(agentBids.get(bidnumber));
 			weightUpdates[bidnumber] = this.uspace.getUtility(agentBids.get(bidnumber));
 
 			if (debug) System.out.println("weightUpdates = " + weightUpdates[bidnumber]);
@@ -239,8 +206,7 @@ public class CadacDC1 extends AbstractNegotiationParty {
 		try {
 			this.updateWeights(agentBids);
 
-
-			List issues = agentBids.get(0).getIssues();
+			List<Issue> issues = agentBids.get(0).getIssues();
 			//System.out.println("issues = " + issues);
 			HashMap bidP = new HashMap();
 
@@ -263,23 +229,23 @@ public class CadacDC1 extends AbstractNegotiationParty {
 
 				}
 
-				Entry var12 = null;
-				Iterator var13 = valuesForIssue.entrySet().iterator();
+				Entry currentBestValue = null;
+				Iterator valueIterator = valuesForIssue.entrySet().iterator();
 
 // we need to change this method to instead of taking the max it creates a distribution and samples from the distribution
 
 				while(true) {
-					Entry var14;
+					Entry currentValue;
 					do {
-						if (!var13.hasNext()) {
-							bidP.put(issue+1, var12.getKey());
+						if (!valueIterator.hasNext()) {
+							bidP.put(issue+1, currentBestValue.getKey());
 							continue label46;
 						}
 
-						var14 = (Entry)var13.next();
-					} while(var12 != null && !((Double)var14.getValue() > (Double)var12.getValue()));
+						currentValue = (Entry)valueIterator.next();
+					} while(currentBestValue != null && !((Double)currentValue.getValue() > (Double)currentBestValue.getValue()));
 
-					var12 = var14;
+					currentBestValue = currentValue;
 				}
 			}
 

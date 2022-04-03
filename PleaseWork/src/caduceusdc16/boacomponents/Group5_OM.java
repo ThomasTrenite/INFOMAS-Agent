@@ -307,7 +307,7 @@ public class Group5_OM extends OpponentModel {
     }
 
 
-    protected double getOpponentUtility(Bid bid) {
+    public double getOpponentUtility(Bid bid) {
         HashMap<Integer, Value> values = bid.getValues();
 
         //double [] estimation = new double[values.size()];
