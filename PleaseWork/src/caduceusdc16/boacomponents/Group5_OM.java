@@ -1,4 +1,3 @@
-package caduceusdc16.boacomponents;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -33,8 +32,6 @@ import org.apache.commons.math3.stat.inference.ChiSquareTest;
 
 public class Group5_OM extends OpponentModel {
 
-    protected int verbose = 0;
-    protected boolean debug = false;
 
     // Global frequency model
     protected Hashtable<String, Object> freqModel;
@@ -48,7 +45,7 @@ public class Group5_OM extends OpponentModel {
     // Global parameters
     protected int WINDOW_SIZE = 5;
     protected double THRESHOLD = 0.7;
-    protected double ALPHA = 15.0;
+    protected double ALPHA = 10.0;
     protected double BETA = 5.0;
 
 
@@ -61,21 +58,22 @@ public class Group5_OM extends OpponentModel {
     @Override
     // Opponent Modeling initialization
     public void init(NegotiationSession negotiationSession, Map<String, Double> parameters) {
+
         super.init(negotiationSession, parameters);
 
         // Initialize window
         win1 = new ArrayList<Bid>();
         win2 = new ArrayList<Bid>();
-        if(parameters.containsKey("window_size")) {
+        if (parameters.containsKey("window_size")) {
             WINDOW_SIZE = (int) parameters.get("window_size").intValue();
         }
-        if(parameters.containsKey("threshold")) {
+        if (parameters.containsKey("threshold")) {
             THRESHOLD = (double) parameters.get("threshold");
         }
-        if(parameters.containsKey("alpha")) {
+        if (parameters.containsKey("alpha")) {
             ALPHA = (double) parameters.get("alpha");
         }
-        if(parameters.containsKey("beta")) {
+        if (parameters.containsKey("beta")) {
             BETA = (double) parameters.get("beta");
         }
 
@@ -86,7 +84,7 @@ public class Group5_OM extends OpponentModel {
         issueWeight = new Hashtable<String, Double>();
         // Get list of domain issues
         List<Issue> issues = negotiationSession.getIssues();
-        double initialWeight = 1.0/issues.size();
+        double initialWeight = 1.0 / issues.size();
 
         for (Issue i : issues) {
 
@@ -96,20 +94,17 @@ public class Group5_OM extends OpponentModel {
             // Map issue name to its frequency model weight
             issueWeight.put(i.getName(), initialWeight);
 
-            if (verbose > 1) System.out.println("Issue: "+i.getName()+" is of type "+i.getType());
 
             if (i.getType() == ISSUETYPE.DISCRETE) {
 
                 IssueDiscrete d = (IssueDiscrete) i;
 
                 // Initialize appearances of every possible value of the issue to 1
-                Hashtable<String,Integer> countValues = getAllValues(d, 1);
+                Hashtable<String, Integer> countValues = getAllValues(d, 1);
                 freqModel.put(i.getName(), countValues);
-            }
-            else if (i.getType() == ISSUETYPE.REAL) {
+            } else if (i.getType() == ISSUETYPE.REAL) {
                 freqModel.put(i.getName(), new ArrayList<Double>());
-            }
-            else if (i.getType() == ISSUETYPE.INTEGER) {
+            } else if (i.getType() == ISSUETYPE.INTEGER) {
                 freqModel.put(i.getName(), new ArrayList<Integer>());
             }
 
@@ -117,10 +112,11 @@ public class Group5_OM extends OpponentModel {
 
     }
 
-    public Hashtable<String,Integer> getAllValues(IssueDiscrete i, int alpha) {
+    public Hashtable<String, Integer> getAllValues(IssueDiscrete i, int alpha) {
+
         // Dictionary to map every value with the amount of times it has appeared
         // in an opponent's bid
-        Hashtable<String,Integer> countValues = new Hashtable<String,Integer> ();
+        Hashtable<String, Integer> countValues = new Hashtable<String, Integer>();
 
         // List of possible values for the issue
         List<ValueDiscrete> possibleValues = i.getValues();
@@ -151,34 +147,17 @@ public class Group5_OM extends OpponentModel {
             // If the issue is a Discrete issue
             if (o instanceof Hashtable) {
                 // Update number of appearances of its value
-                Hashtable<String, Integer> countValues = (Hashtable<String, Integer>) o ;
+                Hashtable<String, Integer> countValues = (Hashtable<String, Integer>) o;
                 if (countValues.containsKey(value.toString())) {
                     int count = countValues.get(value.toString());
                     count++;
                     // update hashtable
                     countValues.replace(value.toString(), count);
-                }
-                else {
+                } else {
                     System.out.printf("ERROR :: Frequency model found value {%s} for issue {%s} that wasn't initialized\n", name, value.toString());
                 }
                 // update hashtable
                 freqModel.replace(name, countValues);
-            }
-            // If the issue is an Integer issue
-            else if (value.getType() == ISSUETYPE.INTEGER) {
-                System.out.println("WARNING :: Frequency model not supposed for non-discrete issues -------------------");
-                // Add value to list of stored values
-                ArrayList<Integer> valueList = (ArrayList<Integer>) o ;
-                ValueInteger iv = (ValueInteger) value;
-                // valueList.add(iv.getValue());
-            }
-            // If the issue is a Real issue
-            else if (value.getType() == ISSUETYPE.REAL) {
-                System.out.println("WARNING :: Frequency model not supposed for non-discrete issues -------------------");
-                // Add value to list of stored values
-                ArrayList<Double> valueList = (ArrayList<Double>) o ;
-                ValueReal iv = (ValueReal) value;
-                //valueList.add(iv.getValue());
             }
 
         } // end of keys For
@@ -199,7 +178,7 @@ public class Group5_OM extends OpponentModel {
         Hashtable<String, Hashtable<String, Double>> win1Dic = getWindowFreq(win1);
         Hashtable<String, Hashtable<String, Double>> win2Dic = getWindowFreq(win2);
         Hashtable<String, Boolean> concealed = new Hashtable<String, Boolean>();
-        int con =0;
+        int con = 0;
 
         //double list for chi square test
 
@@ -210,51 +189,40 @@ public class Group5_OM extends OpponentModel {
             Hashtable<String, Double> win2Values = win2Dic.get(issue);
 
             Set<String> values_win1 = win1Values.keySet();
-            if (debug) {
-                System.out.println("----------------------------------------------------------------7");
-                System.out.println(win1Values);
-                System.out.println(win2Values);
-                System.out.println("----------------------------------------------------------------7");
-            }
+
             double[] ob = new double[values_win1.size()];
             double[] ex = new double[values_win1.size()];
-            int i =0;
+            int i = 0;
 
-            for(String value : values_win1){
+            for (String value : values_win1) {
                 double win1Freql = win1Values.get(value);
                 double win2Freq = win2Values.get(value);
-//                System.out.println("7----------------------------------------------------------------7");
-//                System.out.println(win1Freql);
-//                System.out.println(win2Freq);
-//                System.out.println("7----------------------------------------------------------------7");
                 ob[i] = win1Freql;
                 ex[i] = win2Freq;
                 i++;
 
             }
-            float merge =0;
-            double distance =0;
-            float common =0;
-            for(i=0;i<ob.length;i++){
-                if(ob[i]==ex[i])
+            float merge = 0;
+            double distance = 0;
+            float common = 0;
+            for (i = 0; i < ob.length; i++) {
+                if (ob[i] == ex[i])
                     common++;
-                else distance = distance + Math.abs(ob[i]-ex[i]);
+                else distance = distance + Math.abs(ob[i] - ex[i]);
             }
-            merge = ob.length+ex.length-common;
-            float jaccard_distance = 1-common/merge;
+            merge = ob.length + ex.length - common;
+            float jaccard_distance = (1 - common / merge);
 
-            if (debug)  System.out.println(jaccard_distance);
-
-            if(jaccard_distance>THRESHOLD){
+            System.out.println(jaccard_distance);
+            if (jaccard_distance > THRESHOLD) {
                 concealed.put(issue, true);
-            }
-            else {
+            } else {
                 concealed.put(issue, false);
                 con++;
             }
 
         }
-        if (con!=issues.size()) {
+        if (con != issues.size()) {
 
             for (String issue : issues) {
 
@@ -270,15 +238,11 @@ public class Group5_OM extends OpponentModel {
     }
 
 
-
     @Override
     protected void updateModel(Bid bid, double time) {
-
         updateFrequencyModel(bid);
 
-
-        if(win2.size() == WINDOW_SIZE) {
-            if (verbose > 0) System.out.println("Window reached size "+WINDOW_SIZE);
+        if (win2.size() == WINDOW_SIZE) {
 
             // Update weights
             updateWeights();
@@ -295,29 +259,26 @@ public class Group5_OM extends OpponentModel {
         }
 
         // Add bids to window 1 (only at the beginning of the negotiation
-        if(win1.size() < WINDOW_SIZE) {
+        if (win1.size() < WINDOW_SIZE) {
             win1.add(bid);
         }
         // If window 1 already full, add bids to window 2
-        else if(win2.size() < WINDOW_SIZE) {
+        else if (win2.size() < WINDOW_SIZE) {
             win2.add(bid);
         }
 
-        if (debug)  System.out.printf("Round %.0f weights: %s", negotiationSession.getTimeline().getCurrentTime(), printWeights());
+
     }
 
 
     public double getOpponentUtility(Bid bid) {
         HashMap<Integer, Value> values = bid.getValues();
 
-        //double [] estimation = new double[values.size()];
         double utility = 0;
 
-
         Set<Number> keys = issueIdToName.keySet();
-        // for every issue
-        for (Number key : keys) {
 
+        for (Number key : keys) {
             // get issue name and its value
             String name = issueIdToName.get(key);
             Value value = values.get(key);
@@ -325,7 +286,7 @@ public class Group5_OM extends OpponentModel {
             double max = -1;
             double temp;
 
-            Hashtable<String,Integer> countValues = (Hashtable<String,Integer>) freqModel.get(name);
+            Hashtable<String, Integer> countValues = (Hashtable<String, Integer>) freqModel.get(name);
 
             // Variable "count" stores the number of times value
             // "value" has appeared in a bid since the beginning
@@ -336,21 +297,15 @@ public class Group5_OM extends OpponentModel {
             Set<String> seenValues = countValues.keySet();
             for (String key1 : seenValues) {
                 temp = countValues.get(key1);
-                if (temp > max)	max = temp;
+                if (temp > max) max = temp;
             }
 
             double valueFreq = count * 1.0 / max;
             double issueScore = issueWeight.get(name) * valueFreq;
             utility += issueScore;
 
-            if (debug) {
-                System.out.println("------ui--------");
-                System.out.println(utility);
-            }
 
-
-        } // end of issues For
-
+        }
         return utility;
     }
 
@@ -358,23 +313,15 @@ public class Group5_OM extends OpponentModel {
     // Estimation of the opponent's utility of a given bid
     public double getBidEvaluation(Bid bid) {
 
-
         double utility = 0;
 
         if (negotiationSession.getTimeline().getCurrentTime() > 5) {
 
             utility = getOpponentUtility(bid);
 
-            if (verbose > 1) {
-                System.out.printf("Utility: %3.5f\n-------------------------------\n\n", utility);
-            }
-
             return utility;
-        }
-        else {
-            if (verbose > 1) {
-                System.out.println("Not enough opponent bids, returning own utility\n-------------------------------");
-            }
+        } else {
+
             return negotiationSession.getUtilitySpace().getUtility(bid);
         }
 
@@ -388,37 +335,36 @@ public class Group5_OM extends OpponentModel {
 
     @Override
     // Parameters for the Opponent Model component in Genius
-    public Set<BOAparameter> getParameterSpec(){
+    public Set<BOAparameter> getParameterSpec() {
         Set<BOAparameter> set = new HashSet<BOAparameter>();
         set.add(new BOAparameter("window_size", 5.0, "Window capacity in number of opponent's bid"));
-        set.add(new BOAparameter("threshold", 0.1, "Min. p value for chi test"));
+        set.add(new BOAparameter("threshold", 0.7, "Min. p value for chi test"));
         set.add(new BOAparameter("alpha", 10.0, "Base weight increase"));
         set.add(new BOAparameter("beta", 5.0, "Controls influence of time in weight update. Higher values = more increment"));
         return set;
     }
 
 
-
     /**
      * Given a hash table with value appearances, returns a similar structure
      * with value frequencies with respect to a specified total
      */
-    public Hashtable<String,Hashtable<String,Double>> getFrequency(Hashtable<String, Object> model, int total) {
+    public Hashtable<String, Hashtable<String, Double>> getFrequency(Hashtable<String, Object> model, int total) {
 
         // Hashtable to store the frequency of every value of every issue
-        Hashtable<String, Hashtable<String,Double>> frequencies = new Hashtable<String, Hashtable<String,Double>>();
+        Hashtable<String, Hashtable<String, Double>> frequencies = new Hashtable<String, Hashtable<String, Double>>();
 
         Set<String> keys = model.keySet();
         for (String issue : keys) {
 
             // Hashtable to store the frequency of every value of a specific issue
-            Hashtable<String,Double> valueFreq = new Hashtable<String,Double>();
+            Hashtable<String, Double> valueFreq = new Hashtable<String, Double>();
 
             Object o = model.get(issue);
             // If the issue is a Discrete issue
             if (o instanceof Hashtable) {
                 @SuppressWarnings("unchecked")
-                Hashtable<String,Integer> countValues = (Hashtable<String,Integer>) o;
+                Hashtable<String, Integer> countValues = (Hashtable<String, Integer>) o;
 
                 Set<String> possibleValues = countValues.keySet();
                 for (String value : possibleValues) {
@@ -426,7 +372,7 @@ public class Group5_OM extends OpponentModel {
                     double count = countValues.get(value);
                     // Frequency is calculated as "count" divided by a given total (number of rounds, elements of a window)
 
-                    double freq = count * 1.0 / (total+possibleValues.size());
+                    double freq = count * 1.0 / (total + possibleValues.size());
                     // Store freq in hashtable
                     valueFreq.put(value, count);
                 }
@@ -437,9 +383,10 @@ public class Group5_OM extends OpponentModel {
 
         return frequencies;
     }
-
-
-    public Hashtable<String, Hashtable<String,Double>> getWindowFreq(List<Bid> window) {
+    /**
+     * Get the issue frequency for each window
+     */
+    public Hashtable<String, Hashtable<String, Double>> getWindowFreq(List<Bid> window) {
 
         // Get base empty model with Laplace smoothing
         Hashtable<String, Object> model = getEmptyModel();
@@ -458,7 +405,7 @@ public class Group5_OM extends OpponentModel {
 
 
                 // Add one to its appearances
-                Hashtable<String,Integer> countValues = (Hashtable<String,Integer>) model.get(name);
+                Hashtable<String, Integer> countValues = (Hashtable<String, Integer>) model.get(name);
                 int count = countValues.get(value.toString());
                 count += 1;
                 countValues.replace(value.toString(), count);
@@ -469,39 +416,41 @@ public class Group5_OM extends OpponentModel {
         return getFrequency(model, window.size());
     }
 
+    /**
+     * Generate an empty model
+     */
     public Hashtable<String, Object> getEmptyModel() {
         // Initialize tables
         Hashtable<String, Object> emptyModel = new Hashtable<String, Object>();
 
         // Get list of domain issues
         List<Issue> issues = negotiationSession.getIssues();
-        double initialWeight = 1.0/issues.size();
+        // initial weights of each issues are equal
+        double initialWeight = 1.0 / issues.size();
 
         for (Issue i : issues) {
             String name = i.getName();
             IssueDiscrete d = (IssueDiscrete) i;
             // Initialize appearances of every possible value of the issue to 1
-            Hashtable<String,Integer> countValues = getAllValues(d, 1);
+            Hashtable<String, Integer> countValues = getAllValues(d, 1);
             emptyModel.put(i.getName(), countValues);
 
         }
 
         return emptyModel;
     }
+    /**
+     * Calculate the issue weight increase
+     */
+    public double getDelta(double alpha, double beta) {
 
-
-    protected double getDelta(double alpha, double beta) {
-        if (debug) {
-            System.out.println("--------time----------");
-            System.out.println(negotiationSession.getTime());
-        }
-            return alpha * (1 - Math.pow(negotiationSession.getTime(), beta));
+        return alpha * (1 - Math.pow(negotiationSession.getTime(), beta));
     }
 
     /**
      * Scales the weights of the issues so that they add up to 1
      */
-    protected void scaleWeights() {
+    public void scaleWeights() {
         Set<String> issues = issueWeight.keySet();
         double sum = 0;
         for (String issue : issues) {
@@ -517,27 +466,28 @@ public class Group5_OM extends OpponentModel {
     /**
      * Helper method to add all elements in an array
      */
-    public double sum(double...values) {
+    public double sum(double... values) {
         double result = 0;
-        for (double value:values)
+        for (double value : values)
             result += value;
         return result;
     }
-
-
-
-
-    protected String printWeights() {
-        String s = "{\n";
-        Set<String> issues = issueWeight.keySet();
-        for (String issue : issues) {
-            String issueName = String.format("%30s", issue);
-            String rounded = String.format("%.8f", issueWeight.get(issue));
-
-            s += "\t"+issueName+" : "+rounded+"\n";
-        }
-        s += "}\n";
-        return s;
-    }
-
 }
+
+
+
+//
+//    protected String printWeights() {
+//        String s = "{\n";
+//        Set<String> issues = issueWeight.keySet();
+//        for (String issue : issues) {
+//            String issueName = String.format("%30s", issue);
+//            String rounded = String.format("%.8f", issueWeight.get(issue));
+//
+//            s += "\t"+issueName+" : "+rounded+"\n";
+//        }
+//        s += "}\n";
+//        return s;
+//    }
+//
+//}
