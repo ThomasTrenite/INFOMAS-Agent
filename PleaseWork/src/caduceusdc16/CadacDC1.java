@@ -21,7 +21,7 @@ import java.util.Map.Entry;
 public class CadacDC1 extends AbstractNegotiationParty {
 	public double discountFactor = 0.0D;
 	private double selfReservationValue = 0.75D;
-	private double percentageOfOfferingBestBid = 0.1D;
+	private double percentageOfOfferingBestBid = 0.7D;
 	private double sigma = 0.95;
 	private boolean debug = false;
 	private Bid lastReceivedBid = null;
