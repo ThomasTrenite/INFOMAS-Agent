@@ -1,5 +1,9 @@
-package caduceusdc16.boacomponents;
-
+/**
+ * Opponent model using the basic idea of windows and frequency distribution
+ * Reference to code from https://github.com/Pasqmg/BOA_OpponentModel/blob/master/PasqualOpponentModel.java
+ * @author Yue Shi
+ * @version 1.2
+ */
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -112,7 +116,10 @@ public class Group5_OM extends OpponentModel {
         }
 
     }
-
+    /**
+     * Using Laplace Smoothing, initializes the frequency model for a given issue.
+     * Every feasible value for that problem will be given a 1 as though it had previously appeared in an offer.
+     */
     public Hashtable<String, Integer> getAllValues(IssueDiscrete i, int alpha) {
 
         // Dictionary to map every value with the amount of times it has appeared
@@ -128,9 +135,9 @@ public class Group5_OM extends OpponentModel {
 
         return countValues;
     }
-
-
-    @SuppressWarnings("unchecked")
+    /**
+     * Increase the counters of the frequency model for the issudes values contained in a bid given a bid.
+     */
     protected void updateFrequencyModel(Bid bid) {
         HashMap<Integer, Value> values = bid.getValues();
 
@@ -142,7 +149,6 @@ public class Group5_OM extends OpponentModel {
             Value value = values.get(key);
 
             // Get object that the frequency model has stored for the corresponding issue
-            // Depending on issue type it can be a Hashtable or an ArrayList of numbers
             Object o = freqModel.get(name);
 
             // If the issue is a Discrete issue
@@ -154,14 +160,12 @@ public class Group5_OM extends OpponentModel {
                     count++;
                     // update hashtable
                     countValues.replace(value.toString(), count);
-                } else {
-                    System.out.printf("ERROR :: Frequency model found value {%s} for issue {%s} that wasn't initialized\n", name, value.toString());
                 }
                 // update hashtable
                 freqModel.replace(name, countValues);
             }
 
-        } // end of keys For
+        }
 
     }
 
@@ -170,8 +174,7 @@ public class Group5_OM extends OpponentModel {
      * Compares old and new windows and checks, for every issue, if the opponent has concealed.
      * This is done by comparing the change in the frequencies for every possible value of an issue
      * between both windows.
-     * If the value with maximum frequency for one issue does not match for both windows, we
-     * consider that the opponent concealed.
+     * If the Jaccard Distance for one issue is higher than the threshold between windows, we consider that the opponent concealed.
      * The weigths for the non-concealed issues are increased at the end of the comparison
      */
     protected void updateWeights() {
@@ -214,7 +217,6 @@ public class Group5_OM extends OpponentModel {
             merge = ob.length + ex.length - common;
             float jaccard_distance = (1 - common / merge);
 
-            System.out.println(jaccard_distance);
             if (jaccard_distance > THRESHOLD) {
                 concealed.put(issue, true);
             } else {
@@ -238,7 +240,10 @@ public class Group5_OM extends OpponentModel {
 
     }
 
-
+    /**
+     * When the window if full, active the issue weight update mechanism
+     * Fresh the windows
+     */
     @Override
     protected void updateModel(Bid bid, double time) {
         updateFrequencyModel(bid);
@@ -272,6 +277,9 @@ public class Group5_OM extends OpponentModel {
     }
 
 
+    /**
+     * Calculates the opponent's utility of a given bid
+     */
     public double getOpponentUtility(Bid bid) {
         HashMap<Integer, Value> values = bid.getValues();
 
@@ -339,8 +347,8 @@ public class Group5_OM extends OpponentModel {
     public Set<BOAparameter> getParameterSpec() {
         Set<BOAparameter> set = new HashSet<BOAparameter>();
         set.add(new BOAparameter("window_size", 5.0, "Window capacity in number of opponent's bid"));
-        set.add(new BOAparameter("threshold", 0.7, "Min. p value for chi test"));
-        set.add(new BOAparameter("alpha", 10.0, "Base weight increase"));
+        set.add(new BOAparameter("threshold", 0.7, "Jaccard Distance threshold"));
+        set.add(new BOAparameter("alpha", 5.0, "Base weight increase"));
         set.add(new BOAparameter("beta", 5.0, "Controls influence of time in weight update. Higher values = more increment"));
         return set;
     }
@@ -476,19 +484,3 @@ public class Group5_OM extends OpponentModel {
 }
 
 
-
-//
-//    protected String printWeights() {
-//        String s = "{\n";
-//        Set<String> issues = issueWeight.keySet();
-//        for (String issue : issues) {
-//            String issueName = String.format("%30s", issue);
-//            String rounded = String.format("%.8f", issueWeight.get(issue));
-//
-//            s += "\t"+issueName+" : "+rounded+"\n";
-//        }
-//        s += "}\n";
-//        return s;
-//    }
-//
-//}
