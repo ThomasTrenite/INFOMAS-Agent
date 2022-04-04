@@ -33,7 +33,7 @@ public class Group5_OMS extends OMStrategy {
     public Group5_OMS() {
     }
 
-    // initialize the model and get the threshold
+    // initialize the model and check the parameters
     public void init(NegotiationSession var1, OpponentModel var2, Map<String, Double> var3) {
         super.init(var1, var2, var3);
         this.negotiationSession = var1;
@@ -99,7 +99,7 @@ public class Group5_OMS extends OMStrategy {
             int var9 = this.rand.nextInt(Math.min(var2.size(), var11));
             var10 = ((BidDetails) var2.get(var9)).getBid();         // randomly choose one bid
         }else {
-            var10 = ((BidDetails) var2.get(0)).getBid();     // choose the best bid
+            var10 = ((BidDetails) var2.get(0)).getBid();            // choose the best bid
         }
 
         // return the chosen bid
@@ -112,7 +112,7 @@ public class Group5_OMS extends OMStrategy {
         return var8;
     }
 
-    // determine when to stop update opponent model
+    // determine when to stop updating opponent model
     public boolean canUpdateOM() {
         return this.negotiationSession.getTime() < this.updateThreshold;
     }
