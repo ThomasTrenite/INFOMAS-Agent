@@ -86,9 +86,9 @@ public class Group5_OMS extends OMStrategy {
         // sort the set
         Collections.sort(var2, this.comp);
 
-        // check the one best bid threshold
+        // check the one best bid threshold, first phase of strategy
         if (this.negotiationSession.getTime() < this.oneBidThreshold) {
-            int var11 = (int) Math.round((double) var2.size());
+            int var11 = (int) Math.round((double) var2.size()/3.0D);
             if (var11 < this.bestN) {
                 var11 = this.bestN;
             }
@@ -99,7 +99,7 @@ public class Group5_OMS extends OMStrategy {
             int var9 = this.rand.nextInt(Math.min(var2.size(), var11));
             var10 = ((BidDetails) var2.get(var9)).getBid();         // randomly choose one bid
         }else {
-            var10 = ((BidDetails) var2.get(0)).getBid();            // choose the best bid
+            var10 = ((BidDetails) var2.get(0)).getBid();            // choose the best bid, second phase of strategy
         }
 
         // return the chosen bid
@@ -122,7 +122,7 @@ public class Group5_OMS extends OMStrategy {
         HashSet var1 = new HashSet();
         var1.add(new BOAparameter("n", 3.0D, "A random bid is selected from the best n bids"));
         var1.add(new BOAparameter("t", 1.1D, "Time after which the OM should not be updated"));
-        var1.add(new BOAparameter("x", 0.3D, "Time after which the strategy changes to one best bid"));
+        var1.add(new BOAparameter("x", 0.95D, "Time after which the strategy changes to one best bid"));
         return var1;
     }
 
