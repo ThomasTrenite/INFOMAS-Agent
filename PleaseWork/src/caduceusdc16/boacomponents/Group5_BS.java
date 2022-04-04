@@ -19,18 +19,28 @@ import genius.core.utility.AbstractUtilitySpace;
 import java.util.*;
 import java.util.Map.Entry;
 
+    /**
+     * This is the Offering strategy for the transformer agent. It was inspired and based upon the CaduceusDC16 agent.
+     * We adapted their offering strategy by
+     * 1. Using different initial weights and adding dynamic weight updates.
+     * 2. Using different expert agents (only agents that could be decoupled).
+     *    The offering strategies of these expert agents were combined with our own opponent model, opponent model strategy
+     *    and acceptance strategy.
+     *
+     * The original agent can be found in agents.anac.y2017.caduceusdc16.CaduceusDC16.
+     * The original authors: Taha D G ̈unes ̧, Emir Arditi, and Reyhan Aydo ̆gan.
+     * The title of the paper of their agent: Collective voice of experts in multilateral negotiation.
+     * Can be found in: In International Conference on Principles and Practice of Multi-Agent Systems, pages 450–458. Springer,
+     * Version: 2017
+     */
 public class Group5_BS extends OfferingStrategy {
     private boolean debug = false;
-    private double percentageOfOfferingBestBid = 0.85;
+    private double percentageOfOfferingBestBid = 0.88;
     private AbstractUtilitySpace uspace = null;
     public OfferingStrategy[] agents = new OfferingStrategy[5];
     public double[] weights = new double[]{0.205, 0.2, 0.198, 0.204, 0.193};
 
     public Group5_BS() {
-    }
-
-    public double getScore(int agentNumber) {
-        return this.weights[agentNumber];
     }
 
     @Override
@@ -54,6 +64,14 @@ public class Group5_BS extends OfferingStrategy {
         return this.determineNextBid();
     }
 
+        /**
+         * Determines the next bid. If sufficient time has passed (time > totaltime * percentageOfOfferingBestBid) the
+         * expert agents are asked to each propose a bid, after which a bid is created by means of majority voting.
+         *
+         * if (time < totaltime * percentageOfOfferingBestBid) then best bid for our agent is returned.
+         *
+         * @return the bid to be offered
+         */
     @Override
     public BidDetails determineNextBid() {
 
@@ -71,7 +89,7 @@ public class Group5_BS extends OfferingStrategy {
             agentsThatBid.add(i);
         }
 
-        Bid bid = this.getMostProposedBidWithWeight(agentsThatBid, agentBids, this.opponentModel);
+        Bid bid = this.getMostProposedBidWithWeight(agentsThatBid, agentBids);
         nextBid = new BidDetails(bid, this.negotiationSession.getUtilitySpace().getUtility(bid), this.negotiationSession.getTime());
         return nextBid;
     }
@@ -85,11 +103,37 @@ public class Group5_BS extends OfferingStrategy {
         }
     }
 
+        /**
+         * Has enough time passed for the agent to start offering a bid with less utility than the best bid.
+         * A high value for percentageOfOfferingBestBid means the agent will only start conceding at the end of the negotiation.
+         *
+         * @return true or false
+         */
     private boolean isBestOfferTime() {
         return this.negotiationSession.getTimeline().getCurrentTime() < this.negotiationSession.getTimeline().getTotalTime() * this.percentageOfOfferingBestBid;
     }
 
-
+        /**
+         * @param agentBids the bids proposed by the expert agents.
+         *
+         * This method updates the weights that the expert agents use to vote.
+         * The updates are based on the utility of the bid that expert agent offers,
+         * and the utility that it offers the opponent.
+         *
+         * The updates are time dependent. At the beginning of the negotiation, the agents utility has a larger
+         * impact on the weight, and opponents utility a smaller impact.
+         * As time continues, the impact of the opponents utility on the weight increases and
+         * the utility of the agent decreases.
+         *
+         * As the end of the negotiation approaches, the weight updates become smaller.
+         * The idea behind this is that the weights should have reached an equilibrium and
+         * the dominant expert agent should have been established at this point.
+         *
+         * beta controls the impact of the agents utility to the update. (decreasing with time)
+         * alpha controls the impact of the opponents utility to the update (increasing with time)
+         * sigma controls the impact of the total update (decreasing with time)
+         *
+         */
     private void updateWeights(ArrayList<Bid> agentBids) {
 
         double[] weightUpdatesUtility = new double[this.weights.length];
@@ -97,8 +141,10 @@ public class Group5_BS extends OfferingStrategy {
 
         double totalTime = this.negotiationSession.getTimeline().getTotalTime();
         double time = this.negotiationSession.getTimeline().getCurrentTime() - totalTime*this.percentageOfOfferingBestBid ;
-        double beta = 1 / (totalTime - totalTime*this.percentageOfOfferingBestBid );
-        double alpha = 1 / ((totalTime - totalTime*this.percentageOfOfferingBestBid) * (3/2)) ;
+        double beta = 1 - time * 1 / ((totalTime - totalTime*this.percentageOfOfferingBestBid ) * 2);
+        double sigma = time * 1 / (totalTime - totalTime*this.percentageOfOfferingBestBid );
+        double alpha = 1 - time * 1 / ((totalTime - totalTime*this.percentageOfOfferingBestBid) * (3/2)) ;
+
 
         if (debug) {
             System.out.println("beta = " + beta);
@@ -125,12 +171,9 @@ public class Group5_BS extends OfferingStrategy {
         weightUpdatesOpponentUtility = UtilFunctions.normalize(weightUpdatesOpponentUtility);
 
         for (int d = 0; d < this.weights.length; d++) {
-            double updateUtil;
-            double updateOpponentUtil;
-            double updateTotal;
-            updateUtil = weightUpdatesUtility[d] * (1 - time * beta);
-            updateOpponentUtil = weightUpdatesOpponentUtility[d] * (time * beta);
-            updateTotal = (updateUtil + updateOpponentUtil) * (1 - time * alpha);
+            double updateUtil = weightUpdatesUtility[d] * beta;
+            double updateOpponentUtil = weightUpdatesOpponentUtility[d] * sigma;
+            double updateTotal = (updateUtil + updateOpponentUtil) * alpha;
 
             if (debug) {
                 System.out.println("update_1 = " + updateUtil);
@@ -156,8 +199,19 @@ public class Group5_BS extends OfferingStrategy {
         }
     }
 
-
-    private Bid getMostProposedBidWithWeight(ArrayList<Integer> agentNumbers, ArrayList<Bid> agentBids, OpponentModel opponentModel) {
+        /**
+         *
+         * Here the resulting bid is determined by means of majority voting per value per issue.
+         *
+         * First the weights of the agents are updated based on the bids they have proposed.
+         * Each agent votes using their weight on the values that are in their proposed bid.
+         *
+         * The values with the highest vote for each vote are selected and placed in a bid.
+         *
+         * @param agentBids the proposed bids of the expert agents
+         * @return the final bid to be offered to the opponent.
+         */
+    private Bid getMostProposedBidWithWeight(ArrayList<Integer> agentNumbers, ArrayList<Bid> agentBids) {
 
         try {
             this.updateWeights(agentBids);
@@ -186,8 +240,6 @@ public class Group5_BS extends OfferingStrategy {
 
                 Entry currentBestValue = null;
                 Iterator valueIterator = valuesForIssue.entrySet().iterator();
-
-// we need to change this method to instead of taking the max it creates a distribution and samples from the distribution
 
                 while(true) {
                     Entry currentValue;
