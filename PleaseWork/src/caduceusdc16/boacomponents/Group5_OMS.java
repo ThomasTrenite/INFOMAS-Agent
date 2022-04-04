@@ -18,8 +18,7 @@ import java.util.Set;
 /*
 This OMS decides its strategy based on time. Before the time threshold, this strategy choose
 a random bid from N best bids, where N is determined by size of outcome space and user can set
-a minimum number for N. After the time threshold, this strategy choose the one best bid from a
-set of bids with similar utilities.
+a minimum number for N. After the time threshold, this strategy choose the one best bid.
 Users can set 3 parameters, minimum number for N, opponent model update threshold time, and
 change to one best bid time threshold.
  */
