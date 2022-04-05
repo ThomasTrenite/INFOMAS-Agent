@@ -40,6 +40,7 @@ public class AC extends AcceptanceStrategy {
                     if (percentile < 0.1)
                         return Actions.Accept;
                 }
+                else return Actions.Reject;
             }
         }
 
