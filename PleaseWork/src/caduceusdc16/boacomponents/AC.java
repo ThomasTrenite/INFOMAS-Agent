@@ -1,5 +1,3 @@
-package caduceusdc16.boacomponents;
-
 import genius.core.Bid;
 import genius.core.boaframework.AcceptanceStrategy;
 import genius.core.boaframework.Actions;
@@ -9,13 +7,15 @@ import genius.core.boaframework.NegotiationSession;
 import genius.core.boaframework.OfferingStrategy;
 import genius.core.boaframework.OpponentModel;
 
+import java.util.List;
+
 
 public class AC extends AcceptanceStrategy {
     private Bid receivedBid;
     private Bid lastOwnBid;
     private double a;
     private double b;
-    private static double MINIMUM_TARGET = 0.7;
+    private static double MINIMUM_TARGET = 0.8;
 
     public AC() {
     }
@@ -29,12 +29,22 @@ public class AC extends AcceptanceStrategy {
 
         if (receivedBid == null || lastOwnBid == null) {
             return Actions.Reject;
-       /**
-        * when time is below 15%, the acceptance strategy 
-        * only accept when the opponent's offer is little higher than its own utility
-       */
-        } if (time < 0.15D) {
-            double alpha = 1.05D;
+
+        } if(time > 0.8D){
+            if(user_model!=null) {
+                List<Bid> bidOrder = user_model.getBidRanking().getBidOrder();
+                if (bidOrder.contains(receivedBid)) {
+                    double percentile = (bidOrder.size()
+                            - bidOrder.indexOf(receivedBid))
+                            / (double) bidOrder.size();
+                    if (percentile < 0.1)
+                        return Actions.Accept;
+                }
+            }
+        }
+
+        if (time < 0.15D) {
+            double alpha = 1.0D;
             double beta = 0.005D;
             double receivedUtil2 = negotiationSession.getUtilitySpace().getUtility(receivedBid);
             double UtilToSend2 = negotiationSession.getUtilitySpace().getUtility(lastOwnBid);
@@ -42,10 +52,7 @@ public class AC extends AcceptanceStrategy {
             if (alpha * receivedUtil2 + beta >= UtilToSend2) {
                 return Actions.Accept;
             } else return Actions.Reject;
-       /**
-        * Our accpetance utility will make concessions base on time
-        * The curve of this concession is a cubic equation.
-       */
+
         } else {
             double receivedUtil = negotiationSession.getUtilitySpace().getUtility(receivedBid);
             double targetUtil = negotiationSession.getUtilitySpace().getUtility((lastOwnBid));
@@ -63,7 +70,7 @@ public class AC extends AcceptanceStrategy {
 
     @Override
     public String getName() {
-        return "TransformerAcceptanceStrategy";
+        return "G5_AC";
     }
 
 
