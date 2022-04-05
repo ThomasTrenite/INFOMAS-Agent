@@ -61,6 +61,9 @@ In the beginning, we use AC_next strategy.
             } else return Actions.Reject;
 
         } else {
+            /*
+            Here we use a decreasing cubic function curve based on time to lower our accepted utility.
+            */
             double receivedUtil = negotiationSession.getUtilitySpace().getUtility(receivedBid);
             double targetUtil = negotiationSession.getUtilitySpace().getUtility((lastOwnBid));
             double new_targetUtil = 0.7D * (1D - (time - 0.15) * (time - 0.15) * (time - 0.15)) + 0.3D;
