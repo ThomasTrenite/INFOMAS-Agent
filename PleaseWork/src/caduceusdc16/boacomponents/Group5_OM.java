@@ -56,7 +56,7 @@ public class Group5_OM extends OpponentModel {
 
     @Override
     public String getName() {
-        return "Distribution-based Model";
+        return "Group5_OM";
     }
 
 
