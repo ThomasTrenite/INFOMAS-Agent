@@ -15,7 +15,7 @@ public class AC extends AcceptanceStrategy {
     private Bid lastOwnBid;
     private double a;
     private double b;
-    private static double MINIMUM_TARGET = 0.8;
+    private static double MINIMUM_TARGET = 0.7;
 
     public AC() {
     }
@@ -29,9 +29,12 @@ public class AC extends AcceptanceStrategy {
 
         if (receivedBid == null || lastOwnBid == null) {
             return Actions.Reject;
-
+       /**
+        * when time is below 15%, the acceptance strategy 
+        * only accept when the opponent's offer is little higher than its own utility
+       */
         } if (time < 0.15D) {
-            double alpha = 1.0D;
+            double alpha = 1.05D;
             double beta = 0.005D;
             double receivedUtil2 = negotiationSession.getUtilitySpace().getUtility(receivedBid);
             double UtilToSend2 = negotiationSession.getUtilitySpace().getUtility(lastOwnBid);
@@ -39,7 +42,10 @@ public class AC extends AcceptanceStrategy {
             if (alpha * receivedUtil2 + beta >= UtilToSend2) {
                 return Actions.Accept;
             } else return Actions.Reject;
-
+       /**
+        * Our accpetance utility will make concessions base on time
+        * The curve of this concession is a cubic equation.
+       */
         } else {
             double receivedUtil = negotiationSession.getUtilitySpace().getUtility(receivedBid);
             double targetUtil = negotiationSession.getUtilitySpace().getUtility((lastOwnBid));
