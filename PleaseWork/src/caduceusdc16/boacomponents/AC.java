@@ -47,7 +47,9 @@ public class AC extends AcceptanceStrategy {
                 else return Actions.Reject;
             }
         }
-
+/*
+In the beginning, we use AC_next strategy.
+*/
         if (time < 0.15D) {
             double alpha = 1.0D;
             double beta = 0.005D;
