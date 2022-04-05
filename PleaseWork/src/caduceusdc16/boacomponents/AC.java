@@ -29,7 +29,11 @@ public class AC extends AcceptanceStrategy {
 
         if (receivedBid == null || lastOwnBid == null) {
             return Actions.Reject;
-
+/**
+*Look for the highest offer we have received in the past we accept it 
+*if there is an offer similar to the highest offer
+*we set a threshold of 10%
+*/
         } if(time > 0.8D){
             if(user_model!=null) {
                 List<Bid> bidOrder = user_model.getBidRanking().getBidOrder();
